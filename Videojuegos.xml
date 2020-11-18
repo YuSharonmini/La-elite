@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="estilos/Videojuegos.css"?>
+<!DOCTYPE RECETAS SYSTEM "Videojuegos.dtd">
+
+<VIDEOJUEGOS>
+	<videojuego>
+		<titulo></titulo>
+		<genero></genero>
+		<dificultad></dificultad>
+		<breve_descripcion></breve_descripcion>
+		<desarrolladores>
+			<desarrollador></desarrollador>
+				<pais_de_origen></pais_de_origen>
+			<desarrollador></desarrollador>
+				<pais_de_origen></pais_de_origen>
+		</desarrolladores>
+	</videojuego>
+</VIDEOJUEGOS>

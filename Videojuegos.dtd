@@ -1,0 +1,11 @@
+<!ELEMENT VIDEOJUEGOS (videojuego)+>
+<!ELEMENT videojuego (titulo, genero, dificultad, breve_descripcion, )>
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT genero (#PCDATA)>
+	<!ELEMENT dificultad (#PCDATA)>
+	<!ELEMENT breve_descripcion (#PCDATA)>
+	<!ELEMENT desarrolladores (desarrolllador+)>
+		<!ELEMENT desarrollador (#PCDATA)>
+		<!ATTLIST pais_de_origen CDATA #IMPLIED>
+	
+	
