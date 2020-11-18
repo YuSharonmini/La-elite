@@ -1,0 +1,13 @@
+VIDEOJUEGOS {
+	font-family:"times new roman",serif
+}
+VIDEOJUEGOS:first-child:before {
+	content: "VIDEOJUEGOS";
+	display: block;
+	text-align: center;
+	font-size: 48pt;
+	color: blue
+}
+titulo:before{
+	
+}
