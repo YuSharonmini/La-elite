@@ -7,12 +7,16 @@
 		<titulo></titulo>
 		<genero></genero>
 		<dificultad></dificultad>
-		<breve_descripcion></breve_descripcion>
+		<edad_recomendada></edad_recomendada>
+		<plataformas></plataformas>
+			<plataforma></plataforma>
+			<plataforma></plataforma>
+		<online></online>
+		<aÃ±o_de_lanzamiento></aÃ±o_de_lanzamiento>
 		<desarrolladores>
-			<desarrollador></desarrollador>
-				<pais_de_origen></pais_de_origen>
-			<desarrollador></desarrollador>
-				<pais_de_origen></pais_de_origen>
+			<desarrollador pais_de_origen=""></desarrollador>
+			<desarrollador pais_de_origen=""></desarrollador>
 		</desarrolladores>
+		<breve_descripcion></breve_descripcion>
 	</videojuego>
 </VIDEOJUEGOS>
