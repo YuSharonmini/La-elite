@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="estilos/Videojuegos.css"?>
 <!--<!DOCTYPE VIDEOJUEGOS SYSTEM "Videojuegos.dtd">-->
+<!DOCTYPE VIDEOJUEGOS [
+<!ELEMENT VIDEOJUEGOS (videojuego)+>
+<!ELEMENT videojuego (titulo, tienda, idiomas, genero, dificultad, edad_recomendada, plataformas, 
+online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
+	<!ELEMENT titulo (#PCDATA)>
+		<!ATTLIST titulo version_juego ID #REQUIRED
+		duracion CDATA #IMPLIED>
+	<!ELEMENT tienda (#PCDATA)>
+		<!ATTLIST tienda precio CDATA #REQUIRED 
+		 moneda CDATA #REQUIRED>
+	<!ELEMENT idiomas (idioma+)>
+		<!ELEMENT idioma (#PCDATA)>
+	<!ELEMENT genero (#PCDATA)>
+	<!ELEMENT dificultad (#PCDATA)>
+	<!ELEMENT edad_recomendada (#PCDATA)>
+	<!ELEMENT plataformas (plataforma+)>
+		<!ELEMENT plataforma (#PCDATA)>
+			<!ATTLIST plataforma mando CDATA #IMPLIED>
+	<!ELEMENT online (#PCDATA)>
+	<!ELEMENT anho_de_lanzamiento (#PCDATA)>
+	<!ELEMENT desarrolladores (desarrollador+)>
+		<!ELEMENT desarrollador (#PCDATA)>
+			<!ATTLIST desarrollador pais_de_origen CDATA #IMPLIED>
+	<!ELEMENT empresa (#PCDATA)>
+	<!ELEMENT breve_descripcion (#PCDATA)>
+	<!ELEMENT resenhas (#PCDATA)>
+	<!ELEMENT valoracion (#PCDATA)>
+	<!ELEMENT curiosidades (curiosidad+)>
+		<!ELEMENT curiosidad (#PCDATA)>
+]>
 
 <VIDEOJUEGOS>
 	<videojuego>
-		<titulo version_juego="" duracion=""></titulo> 
+		<titulo version_juego="v1.9.2" duracion=""></titulo> 
 		<tienda precio="" moneda=""></tienda><!--Link compra videojuego-->
 		<idiomas>
 			<idioma></idioma>

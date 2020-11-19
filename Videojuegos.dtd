@@ -1,8 +1,12 @@
 <!ELEMENT VIDEOJUEGOS (videojuego)+>
-<!ELEMENT videojuego (titulo, genero, dificultad, breve_descripcion, )>
+<!ELEMENT videojuego (titulo, tienda, idiomas, genero, dificultad, edad_recomendada, plataformas, 
+online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
 	<!ELEMENT titulo (#PCDATA)>
-		<!ATTLIST titulo version_juego ID #IMPLIED>
+		<!ATTLIST titulo version_juego ID #REQUIRED>
 		<!ATTLIST duracion CDATA #IMPLIED>
+	<!ELEMENT tienda (#PCDATA)>
+		<!ATTLIST tienda precio CDATA #REQUIRED 
+		tienda moneda CDATA #REQUIRED>
 	<!ELEMENT idiomas (idioma+)>
 		<!ELEMENT idioma (#PCDATA)>
 	<!ELEMENT genero (#PCDATA)>
@@ -10,9 +14,16 @@
 	<!ELEMENT edad_recomendada (#PCDATA)>
 	<!ELEMENT plataformas (plataforma+)>
 		<!ELEMENT plataforma (#PCDATA)>
-		<!ATTLIST plataforma mando CDATA #REQUIRED>
-	<!ELEMENT desarrolladores (desarrolllador+)>
+			<!ATTLIST plataforma mando CDATA #REQUIRED>
+	<!ELEMENT online (#PCDATA)>
+	<!ELEMENT anho_de_lanzamiento (#PCDATA)>
+	<!ELEMENT desarrolladores (desarrollador+)>
 		<!ELEMENT desarrollador (#PCDATA)>
-			<!ATTLIST desarrollador pais_de_origen CDATA #REQUIRED>
+			<!ATTLIST desarrollador pais_de_origen CDATA #IMPLIED>
+	<!ELEMENT empresa (#PCDATA)>
 	<!ELEMENT breve_descripcion (#PCDATA)>
+	<!ELEMENT resenhas (#PCDATA)>
+	<!ELEMENT valoracion (#PCDATA)>
+	<!ELEMENT curiosidades (curiosidad+)>
+		<!ELEMENT curiosidad (#PCDATA)>
 	
