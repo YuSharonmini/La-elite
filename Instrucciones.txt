@@ -2,11 +2,13 @@ Hola:
 Vuestro trabajo es de "Videojuegos".
 Tenéis que hacer:
 
-1 documento XML que contendrá información de al menos 12 videojuegos diferentes (podéis cambiar los géneros)
-* 3 videojuegos de acción
-* 3 videojuegos de deportes
-* 3 videojuegos de rol
-* 3 videojuegos de carreras
+1 documento XML que contendrá información de al menos 15 videojuegos diferentes (podéis cambiar los géneros)
+* 3 videojuegos de FPS Alavaro
+* 3 videojuegos de deportes Ivan
+* 3 videojuegos de rol Adrian
+* 3 videojuegos de carreras Manuel
+* 3 videojuegos miscelanius Yu
+
 Una dtd que contenga:
 * Al menos, doce elementos
 * Al menos, tres atributos obligatorios.
@@ -21,6 +23,7 @@ XSLT principal:
 * Obtener un listado de videojuegos, de todos los videojuegos en función de su género y otro listado de tipos de videojuegos con el título y el precio (es casi lo mismo, pero al revés).
 Otras XSLT
 * Obtener un listado de videojuegos en función de si es uni o multijugador, en función de la plataforma de juego, del nivel de dificultad, o de cualquier otra cosa que se os ocurra.
+
 Criterios de evaluación:
 1. Validez de la DTD (10%)
 2. Validez del documento XML (10%)

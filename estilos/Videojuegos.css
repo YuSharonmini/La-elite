@@ -11,3 +11,6 @@ VIDEOJUEGOS:first-child:before {
 titulo:before{
 	
 }
+genero{
+	display:block;
+}

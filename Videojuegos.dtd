@@ -1,11 +1,18 @@
 <!ELEMENT VIDEOJUEGOS (videojuego)+>
 <!ELEMENT videojuego (titulo, genero, dificultad, breve_descripcion, )>
 	<!ELEMENT titulo (#PCDATA)>
+		<!ATTLIST titulo version_juego ID #IMPLIED>
+		<!ATTLIST duracion CDATA #IMPLIED>
+	<!ELEMENT idiomas (idioma+)>
+		<!ELEMENT idioma (#PCDATA)>
 	<!ELEMENT genero (#PCDATA)>
 	<!ELEMENT dificultad (#PCDATA)>
-	<!ELEMENT breve_descripcion (#PCDATA)>
+	<!ELEMENT edad_recomendada (#PCDATA)>
+	<!ELEMENT plataformas (plataforma+)>
+		<!ELEMENT plataforma (#PCDATA)>
+		<!ATTLIST plataforma mando CDATA #REQUIRED>
 	<!ELEMENT desarrolladores (desarrolllador+)>
 		<!ELEMENT desarrollador (#PCDATA)>
-		<!ATTLIST pais_de_origen CDATA #IMPLIED>
-	
+			<!ATTLIST desarrollador pais_de_origen CDATA #REQUIRED>
+	<!ELEMENT breve_descripcion (#PCDATA)>
 	

@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="estilos/Videojuegos.css"?>
-<!DOCTYPE RECETAS SYSTEM "Videojuegos.dtd">
+<!--<!DOCTYPE VIDEOJUEGOS SYSTEM "Videojuegos.dtd">-->
 
 <VIDEOJUEGOS>
 	<videojuego>
-		<titulo></titulo>
+		<titulo version_juego="" duracion=""></titulo> 
+		<tienda precio="" moneda=""></tienda><!--Link compra videojuego-->
+		<idiomas>
+			<idioma></idioma>
+			<idioma></idioma>
+		</idiomas>
 		<genero></genero>
 		<dificultad></dificultad>
 		<edad_recomendada></edad_recomendada>
-		<plataformas></plataformas>
-			<plataforma></plataforma>
-			<plataforma></plataforma>
+		<plataformas> <!--Que plataformas soporta-->
+			<plataforma mando=""></plataforma>
+			<plataforma mando=""></plataforma>
+		</plataformas>
 		<online></online>
-		<ano_de_lanzamiento></ano_de_lanzamiento>
+		<anho_de_lanzamiento></anho_de_lanzamiento>
 		<desarrolladores>
 			<desarrollador pais_de_origen=""></desarrollador>
 			<desarrollador pais_de_origen=""></desarrollador>
 		</desarrolladores>
+		<empresa></empresa> <!--Empresa que vende el juego-->
 		<breve_descripcion></breve_descripcion>
+		<resenhas></resenhas>
+		<valoracion></valoracion>
+		<curiosidades>
+			<curiosidad></curiosidad>
+			<curiosidad></curiosidad>
+		</curiosidades>
 	</videojuego>
 </VIDEOJUEGOS>
