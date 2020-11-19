@@ -1,0 +1,137 @@
+VIDEOJUEGOS {
+	font-family: "times new roman",serif;
+	text-align: left;
+	margin: 3%;
+}
+VIDEOJUEGOS:before {
+	content: "VIDEOJUEGOS";
+	display: block;
+	text-align: center;
+	font-size: 48pt;
+	border-bottom: 3px solid #3a34a6;
+    background-color:#E6E6FA;
+    color: #3a34a6;
+}
+videojuego{
+	display:block;
+	margin: 20pt;
+}
+titulo{
+	display: block;
+	font-size: 24pt;
+	text-align: center;
+}
+tienda:before{
+	content: "Tienda:";
+	color: blue;
+	font-weight: bold
+}
+tienda{
+	display:block;
+}
+idiomas:before{
+	content: "Idiomas:";
+	color: blue;
+	font-weight: bold
+}
+idiomas{
+	display:block;
+}
+genero:before{
+	content: "Género:";
+	color: blue;
+	font-weight: bold
+}
+genero{
+	display:block;
+}
+dificultad:before{
+	content: "Dificultad:";
+	color: blue;
+	font-weight: bold
+}
+dificultad{
+	display:block;
+}
+edad_recomendada:before{
+	content: "Pegi:";
+	color: blue;
+	font-weight: bold
+}
+edad_recomendada{
+	display:block;
+}
+plataformas:before{
+	content: "Plataformas soportadas:";
+	color: blue;
+	font-weight: bold
+}
+plataformas{
+	display:block;
+}
+online:before{
+	content: "Online:";
+	color: blue;
+	font-weight: bold
+}
+online{
+	display:block;
+}
+anho_de_lanzamiento:before{
+	content: "Año de lanzamiento:";
+	color: blue;
+	font-weight: bold
+}
+anho_de_lanzamiento{
+	display:block;
+}
+desarrolladores:before{
+	content: "Desarrolladores:";
+	color: blue;
+	font-weight: bold
+}
+desarrollador{
+	display:list-item;
+	list-style:circle;
+	margin-left:40pt;
+}
+empresa:before{
+	content: "Empresa desarrolladora:";
+	color: blue;
+	font-weight: bold
+}
+empresa{
+	display:block;
+}
+breve_descripcion:before{
+	content: "Breve descripción:";
+	color: blue;
+	font-weight: bold
+}
+breve_descripcion{
+	display:block;
+}
+resenhas:before{
+	content: "Reseñas:";
+	color: blue;
+	font-weight: bold
+}
+resenhas{
+	display:block;
+}
+valoracion:before{
+	content: "Nuestra valoración:";
+	color: blue;
+	font-weight: bold
+}
+valoracion{
+	display:block;
+}
+curiosidades:before{
+	content: "Curiosidades:";
+	color: blue;
+	font-weight: bold
+}
+curiosidades{
+	display:block;
+}
