@@ -3,7 +3,7 @@ Vuestro trabajo es de "Videojuegos".
 Tenéis que hacer:
 
 1 documento XML que contendrá información de al menos 15 videojuegos diferentes (podéis cambiar los géneros)
-* 3 videojuegos de FPS Alavaro
+* 3 videojuegos de FPS Alabaro Portatil
 * 3 videojuegos de deportes Ivan
 * 3 videojuegos de rol Adrian
 * 3 videojuegos de carreras Manuel

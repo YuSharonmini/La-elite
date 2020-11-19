@@ -1,16 +1,170 @@
 VIDEOJUEGOS {
-	font-family:"times new roman",serif
+	font-family: "times new roman",serif;
+	font-size:16pt;
+	text-align: left;
+	margin: 3%;
+    background-color: #A9BCF5;
+	background-image: url('https://static.wikia.nocookie.net/minecraftpe/images/6/62/Diamante.png/revision/latest/scale-to-width-down/160?cb=20200929160201&path-prefix=es'); 
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 40px 40px;
+
 }
-VIDEOJUEGOS:first-child:before {
+desarrollador[pais_de_origen="España"]:after{
+	content: url('https://static.wikia.nocookie.net/minecraftpe/images/6/62/Diamante.png/revision/latest/scale-to-width-down/160?cb=20200929160201&path-prefix=es');
+	padding: 1%;
+} 
+VIDEOJUEGOS:before {
 	content: "VIDEOJUEGOS";
 	display: block;
 	text-align: center;
 	font-size: 48pt;
-	color: blue
+	border-bottom: 3px solid #3a34a6;
+    background-color:#E6E6FA;
+    color: #3a34a6;
+	font-weight:bold;
+	text-shadow: -5px 3px 5px black;
 }
-titulo:before{
-	
+videojuego{
+	display:block;
+	margin: 20pt;
+	background-color:#E6E6FA;
+}
+titulo{
+	display: block;
+	font-size: 24pt;
+	text-align: center;
+}
+tienda:before{
+	content: "Tienda:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+tienda{
+	display:block;
+	margin-top:2%;
+}
+idiomas:before{
+	content: "Idiomas:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+idiomas{
+	display:block;
+	margin-top:2%;
+}
+genero:before{
+	content: "Género:";
+	color: #3a34a6;;
+	font-weight: bold
 }
 genero{
 	display:block;
+	margin-top:2%;
+}
+dificultad:before{
+	content: "Dificultad:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+dificultad{
+	display:block;
+	margin-top:2%;
+}
+edad_recomendada:before{
+	content: "Pegi:";
+	color: #3a34a6;;
+	font-weight: bold;
+}
+edad_recomendada{
+	display:block;
+	margin-top:2%;
+}
+plataformas:before{
+	content: "Plataformas soportadas:";
+	color: #3a34a6;;
+	font-weight: bold;
+	margin-top:2%;
+	display: block;
+}
+plataforma{
+	display:list-item;
+	list-style:decimal;
+	margin-left:40pt;
+}
+online:before{
+	content: "Online:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+online{
+	display:block;
+	margin-top:2%;
+}
+anho_de_lanzamiento:before{
+	content: "Año de lanzamiento:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+anho_de_lanzamiento{
+	display:block;
+	margin-top:2%;
+}
+desarrolladores:before{
+	content: "Desarrolladores:";
+	color: #3a34a6;;
+	font-weight: bold;
+	display: block;
+	margin-top:2%;
+}
+desarrollador{
+	display:list-item;
+	list-style:circle;
+	margin-left:40pt;
+	margin-top:2%;
+}
+empresa:before{
+	content: "Empresa desarrolladora:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+empresa{
+	display:block;
+	margin-top:2%;
+}
+breve_descripcion:before{
+	content: "Breve descripción:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+breve_descripcion{
+	display:block;
+	margin-top:2%;
+}
+resenhas:before{
+	content: "Reseñas:";
+	color: #3a34a6;
+	font-weight: bold;
+}
+resenhas{
+	display:block;
+	margin-top:2%;
+}
+valoracion:before{
+	content: "Nuestra valoración:";
+	color: #3a34a6;;
+	font-weight: bold
+}
+valoracion{
+	display:block;
+	margin-top:2%;
+}
+curiosidades:before{
+	content: "Curiosidades:";
+	color: #3a34a6;
+	font-weight: bold;
+}
+curiosidades{
+	display:block;
+	margin-top:2%;
 }

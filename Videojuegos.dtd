@@ -2,11 +2,11 @@
 <!ELEMENT videojuego (titulo, tienda, idiomas, genero, dificultad, edad_recomendada, plataformas, 
 online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
 	<!ELEMENT titulo (#PCDATA)>
-		<!ATTLIST titulo version_juego ID #REQUIRED>
-		<!ATTLIST duracion CDATA #IMPLIED>
+		<!ATTLIST titulo version_juego ID #REQUIRED
+		duracion CDATA #IMPLIED>
 	<!ELEMENT tienda (#PCDATA)>
 		<!ATTLIST tienda precio CDATA #REQUIRED 
-		tienda moneda CDATA #REQUIRED>
+		moneda CDATA #REQUIRED>
 	<!ELEMENT idiomas (idioma+)>
 		<!ELEMENT idioma (#PCDATA)>
 	<!ELEMENT genero (#PCDATA)>
