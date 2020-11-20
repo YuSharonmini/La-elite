@@ -1,0 +1,21 @@
+Pegi 3 : https://pegi.info/themes/pegi/public-images/pegi/pegi3.png
+Pegi 7 : https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PEGI_7.svg/90px-PEGI_7.svg.png
+Pegi 12 : https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/PEGI_12.svg/90px-PEGI_12.svg.png
+Pegi 16 : https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/PEGI_16.svg/90px-PEGI_16.svg.png
+Pegi 18 : https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/PEGI_18.svg/90px-PEGI_18.svg.png
+Canada : https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/203px-Flag_of_Canada_%28Pantone%29.svg.png
+EEUU :  https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/203px-Flag_of_the_United_States.svg.png
+Japon : https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/203px-Flag_of_Japan.svg.png
+Rumania : https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/203px-Flag_of_Romania.svg.png
+fifa : https://images-na.ssl-images-amazon.com/images/I/71XfassQmcL._AC_SL1500_.jpg
+nba 2k21 :  https://images-na.ssl-images-amazon.com/images/I/81btPmqcUgL._AC_SL1500_.jpg
+Minecraft : https://images-na.ssl-images-amazon.com/images/I/91K%2B4IJ2%2BZL._AC_SL1500_.jpg
+FF VII : https://images-na.ssl-images-amazon.com/images/I/81ex5wIsfBL._AC_SL1500_.jpg
+Undertale : https://images-na.ssl-images-amazon.com/images/I/71LJ3ykNnrL._AC_SL1500_.jpg
+PKM Platino : https://images-na.ssl-images-amazon.com/images/I/51GiGTjeigL._AC_.jpg
+
+
+
+
+
+
