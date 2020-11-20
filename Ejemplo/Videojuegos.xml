@@ -78,7 +78,7 @@
 	
 	<videojuego>
 		<titulo imagen="NBA2K2020" version_juego="v1" duracion="">NBA 2K21</titulo> 
-		<tienda precio="59,95" moneda="E">Steam</tienda><!--Link compra videojuego-->
+		<tienda precio="59,95" moneda="Euros">Steam</tienda><!--Link compra videojuego-->
 		<idiomas>
 			<idioma>Español</idioma>
 			<idioma>Inglés</idioma>
