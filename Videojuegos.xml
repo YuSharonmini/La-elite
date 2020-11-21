@@ -8,7 +8,7 @@
 	<videojuego>
 		<titulo imagen="Valorant" version_juego="v1.07" duracion="0">Valorant</titulo> 
 		<tienda precio="0" moneda="0">
-			<!--En el window he agregado el enlace-->
+			<!--En el window he agregado un elemento de html-->
 			<window xmlns:html="http://www.w3.org/1999/xhtml">
 				<html:a href="https://playvalorant.com/es-es/" target="_blank">
 					Riot Games
@@ -27,7 +27,7 @@
 		</idiomas>
 		<genero>FPS</genero>
 		<dificultad>Dificil</dificultad>
-		<edad_recomendada>+16</edad_recomendada>
+		<edad_recomendada pegi="16">PEGI</edad_recomendada>
 		<plataformas> <!--Que plataformas soporta-->
 			<plataforma mando="Teclado y raton">PC</plataforma>
 		</plataformas>
@@ -65,7 +65,7 @@
 		</idiomas>
 		<genero>FPS</genero>
 		<dificultad>Dificil</dificultad>
-		<edad_recomendada>+16</edad_recomendada>
+		<edad_recomendada pegi="16">PEGI</edad_recomendada>
 		<plataformas> <!--Que plataformas soporta-->
 			<plataforma mando="Teclado y raton">PC</plataforma>
 			<plataforma mando="mando">XBOX 360</plataforma>
@@ -103,7 +103,7 @@
 		</idiomas>
 		<genero>FPS</genero>
 		<dificultad>Dificil</dificultad>
-		<edad_recomendada>+16</edad_recomendada>
+		<edad_recomendada pegi="16">PEGI</edad_recomendada>
 		<plataformas> <!--Que plataformas soporta-->
 			<plataforma mando="Teclado y raton">PC</plataforma>
 			<plataforma mando="Mando XBOX">XBOX ONE</plataforma>
@@ -143,7 +143,7 @@
 		</idiomas>
 		<genero>Deportes</genero>
 		<dificultad>6/10</dificultad>
-		<edad_recomendada>+3</edad_recomendada>
+		<edad_recomendada pegi="3">PEGI</edad_recomendada>
 		<plataformas> 
 			<plataforma mando="Mando XBOX">XBOX One</plataforma>
 			<plataforma mando="Mando Playstation">Playstation 4</plataforma>
@@ -182,7 +182,7 @@
 		</idiomas>
 		<genero>Deportes</genero>
 		<dificultad>7/10</dificultad>
-		<edad_recomendada>+3</edad_recomendada>
+		<edad_recomendada pegi="3">PEGI</edad_recomendada>
 		<plataformas> 
 			<plataforma mando="Mando XBOX">XBOX X / XBOX Y</plataforma>
 			<plataforma mando="Teclado y raton">PC</plataforma>
@@ -220,7 +220,7 @@
 		</idiomas>
 		<genero>Plataforma</genero>
 		<dificultad>10/10</dificultad>
-		<edad_recomendada>18+</edad_recomendada>
+		<edad_recomendada pegi="18">PEGI</edad_recomendada>
 		<plataformas> 
 			<plataforma mando="Mando XBOX">XBOX 360</plataforma>
 			<plataforma mando="Teclado y raton">PC</plataforma>
@@ -252,7 +252,7 @@
 		</idiomas>
 		<genero>Rol/RPG</genero>
 		<dificultad>Media</dificultad>
-		<edad_recomendada>16+</edad_recomendada>
+		<edad_recomendada pegi="16">PEGI</edad_recomendada>
 		<plataformas>
 			<plataforma mando ="teclado">PC</plataforma>
 			<plataforma mando ="DualShock4">PS1</plataforma>
@@ -295,7 +295,7 @@
 		</idiomas>
 		<genero>Rol/RPG</genero>
 		<dificultad>Media</dificultad>
-		<edad_recomendada>12+</edad_recomendada>
+		<edad_recomendada pegi="12">PEGI</edad_recomendada>
 		<plataformas>
 			<plataforma mando ="teclado">PC</plataforma>
 			<plataforma mando ="DualShock4">PS4</plataforma>
@@ -337,7 +337,7 @@
 		</idiomas>
 		<genero>Rol/RPG</genero>
 		<dificultad>Fácil/Media</dificultad>
-		<edad_recomendada>3+</edad_recomendada>
+		<edad_recomendada pegi="16">PEGI</edad_recomendada>
 		<plataformas>
 			<plataforma mando ="consola">Nintendo DS</plataforma>
 		</plataformas>

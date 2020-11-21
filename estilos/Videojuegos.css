@@ -3,12 +3,11 @@ VIDEOJUEGOS {
 	font-size:16pt;
 	text-align: left;
 	margin: 3%;
-    background-color: #A9BCF5;
-	background-image: url('https://static.wikia.nocookie.net/minecraftpe/images/6/62/Diamante.png/revision/latest/scale-to-width-down/160?cb=20200929160201&path-prefix=es'); 
+	background-color: #A9BCF5;
+	/*background-image: url('https://static.wikia.nocookie.net/minecraftpe/images/6/62/Diamante.png/revision/latest/scale-to-width-down/160?cb=20200929160201&path-prefix=es'); 
 	background-position: center;
 	background-repeat: repeat;
-	background-size: 40px 40px;
-
+	background-size: 40px 40px; */
 }
 
 
@@ -36,7 +35,7 @@ titulo{
 	display: block;
 	font-size: 30pt;
 	font-family: Haettenschweiler,serif;
-	text-align: center;
+	text-align: left;
 	border-bottom: 3px solid #3a34a6;
     background-color:#E6E6FA;
     color: #3a34a6;
@@ -51,54 +50,61 @@ titulo[imagen="Valorant"]:after{
     width: 300px; 
     height: 200px;
     content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
 }
 titulo[imagen="CSGO"]:after{
 	background-image: url('https://i.blogs.es/8f55ae/fb_image/1366_2000.png');
     text-align:center;
     background-position: top;
     background-size: 300px 200px;
-    background-repeat: no-repeat;
 	display: block;
     width: 300px; 
     height: 200px;
     content: "\0000a0";
-    padding-left: 5%
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
 }
 titulo[imagen="Overwatch"]:after{
 	background-image: url('https://vignette.wikia.nocookie.net/overwatch/images/c/ca/Overwatch_Portada.jpg/revision/latest/scale-to-width-down/350?cb=20160523174229&path-prefix=es');
     text-align:center;
     background-position: top;
     background-size: 300px 400px;
-    background-repeat: no-repeat;
 	display: block;
     width: 300px; 
     height: 400px;
     content: "\0000a0";
-    padding-left: 5%;
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
 }
 titulo[imagen="FIFA20"]:after{
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71XfassQmcL._AC_SX385_.jpg%27");
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71XfassQmcL._AC_SX385_.jpg");
     text-align:center;
     background-position: top;
     background-size: 300px 400px;
-    background-repeat: no-repeat;
     display: block;
     width: 300px; 
     height: 400px;
     content: "\0000a0";
-    padding-left: 5%;
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
 }
-titulo[imagen="NBA2K2020"]:after{
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71XfassQmcL._AC_SL1500_.jpg");
+titulo[imagen="NBA2K21"]:after{
+	background-image: url("https://images-na.ssl-images-amazon.com/images/I/81btPmqcUgL._AC_SL1500_.jpg");
     text-align:center;
     background-position: top;
     background-size: 300px 400px;
-    background-repeat: no-repeat;
     display: block;
     width: 300px; 
     height: 400px;
     content: "\0000a0";
-    padding-left: 5%;
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
 }
 
 
@@ -110,7 +116,7 @@ tienda:before{
 }
 tienda{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
@@ -118,14 +124,14 @@ idiomas:before{
 	content: "Idiomas: ";
 	color: #3a34a6;
 	font-weight: bold;
-	margin-top: 2%;
+	margin-top: 1%;
 	display: block;
 }
 idioma{
 	display:list-item;
 	list-style:square;
 	margin-left: 20pt;
-	margin-top: 2%;
+	margin-top: 1%;
 }
 
 
@@ -136,7 +142,7 @@ genero:before{
 }
 genero{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
@@ -147,18 +153,83 @@ dificultad:before{
 }
 dificultad{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
 edad_recomendada:before{
-	content: "Pegi: ";
+	content: "Edad recomendada: ";
 	color: #3a34a6;
 	font-weight: bold;
 }
 edad_recomendada{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
+}
+edad_recomendada[pegi="3"]:after{
+	background-image: url('https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 40px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 40px;
+    content: "\0000a0";
+	padding-left: 1%;
+	padding-top: 10px;
+}
+edad_recomendada[pegi="7"]:after{
+	background-image: url('https://pegi.info/sites/default/files/inline-images/age-7-black.jpg');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 40px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 40px;
+    content: "\0000a0";
+	padding-left: 1%;
+	padding-top: 10px;
+}
+edad_recomendada[pegi="12"]:after{
+	background-image: url('https://pegi.info/sites/default/files/inline-images/age-12-black.jpg');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 40px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 40px;
+    content: "\0000a0";
+	padding-left: 1%;
+	padding-top: 10px;
+}
+edad_recomendada[pegi="16"]:after{
+	background-image: url('https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 40px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 40px;
+    content: "\0000a0";
+	padding-left: 1%;
+	padding-top: 10px;
+}
+edad_recomendada[pegi="18"]:after{
+	background-image: url('https://pegi.info/sites/default/files/inline-images/age-18-black%202_0.jpg');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 40px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 40px;
+    content: "\0000a0";
+	padding-left: 1%;
+	padding-top: 10px;
 }
 
 
@@ -167,7 +238,7 @@ plataformas:before{
 	content: "Plataformas soportadas: ";
 	color: #3a34a6;
 	font-weight: bold;
-	margin-top:2%;
+	margin-top:1%;
 	display: block;
 }
 plataforma{
@@ -184,7 +255,7 @@ online:before{
 }
 online{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
@@ -195,7 +266,7 @@ anho_de_lanzamiento:before{
 }
 anho_de_lanzamiento{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
@@ -204,13 +275,13 @@ desarrolladores:before{
 	color: #3a34a6;
 	font-weight: bold;
 	display: block;
-	margin-top:2%;
+	margin-top:1%;
 }
 desarrollador{
 	display:list-item;
 	list-style:circle;
 	margin-left:40pt;
-	margin-top:2%;
+	margin-top:1%;
 }
 desarrollador[pais_de_origen="España"]:after{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/203px-Flag_of_Spain.svg.png");
@@ -244,7 +315,7 @@ empresa:before{
 }
 empresa{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
@@ -255,7 +326,7 @@ breve_descripcion:before{
 }
 breve_descripcion{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
@@ -268,7 +339,7 @@ resenhas:before{
 
 resenhas{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 valoracion:before{
 	content: "Nuestra valoración: ";
@@ -277,7 +348,7 @@ valoracion:before{
 }
 valoracion{
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 
 
@@ -286,7 +357,7 @@ curiosidades:before{
 	color: #3a34a6;
 	font-weight: bold;
 	display:block;
-	margin-top:2%;
+	margin-top:1%;
 }
 curiosidad{
 	display:list-item;
