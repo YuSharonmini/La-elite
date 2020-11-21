@@ -93,16 +93,73 @@ dificultad{
 
 
 edad_recomendada:before{
-	content: "Pegi: ";
-	color: #3a34a6;
+	content: "Edad recomendada:";
+	color: #3a34a6;;
 	font-weight: bold;
 }
 edad_recomendada{
 	display:block;
 	margin-top:2%;
 }
-
-
+edad_recomendada[pegi="3"]:after{
+	background-image: url('https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 30px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+	padding-left: 1%
+}
+edad_recomendada[pegi="7"]:after{
+	background-image: url('https://pegi.info/sites/default/files/inline-images/age-7-black.jpg');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 30px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+	padding-left: 1%
+}
+edad_recomendada[pegi="12"]:after{
+	background-image: url('https://pegi.info/sites/default/files/inline-images/age-12-black.jpg');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 30px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+	padding-left: 1%
+}edad_recomendada[pegi="16"]:after{
+	background-image: url('https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 30px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+	padding-left: 1%
+}
+edad_recomendada[pegi="18"]:after{
+	background-image: url('https://pegi.info/sites/default/files/inline-images/age-18-black%202_0.jpg');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 30px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+	padding-left: 1%
+}
 
 plataformas:before{
 	content: "Plataformas soportadas: ";
