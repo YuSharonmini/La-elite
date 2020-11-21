@@ -34,7 +34,8 @@ videojuego{
 
 titulo{
 	display: block;
-	font-size: 26pt;
+	font-size: 30pt;
+	font-family: Haettenschweiler,serif;
 	text-align: center;
 	border-bottom: 3px solid #3a34a6;
     background-color:#E6E6FA;
@@ -42,6 +43,64 @@ titulo{
 	font-weight:bold;
 	text-shadow: -4px 2px 4px grey;
 }
+titulo[imagen="Valorant"]:after{
+	background-image: url('https://www.muycomputer.com/wp-content/uploads/2020/03/Valorant.jpg');
+    background-position: right; 
+    background-size: 300px 200px;
+	display: block;
+    width: 300px; 
+    height: 200px;
+    content: "\0000a0";
+}
+titulo[imagen="CSGO"]:after{
+	background-image: url('https://i.blogs.es/8f55ae/fb_image/1366_2000.png');
+    text-align:center;
+    background-position: top;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+	display: block;
+    width: 300px; 
+    height: 200px;
+    content: "\0000a0";
+    padding-left: 5%
+}
+titulo[imagen="Overwatch"]:after{
+	background-image: url('https://vignette.wikia.nocookie.net/overwatch/images/c/ca/Overwatch_Portada.jpg/revision/latest/scale-to-width-down/350?cb=20160523174229&path-prefix=es');
+    text-align:center;
+    background-position: top;
+    background-size: 300px 400px;
+    background-repeat: no-repeat;
+	display: block;
+    width: 300px; 
+    height: 400px;
+    content: "\0000a0";
+    padding-left: 5%;
+}
+titulo[imagen="FIFA20"]:after{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71XfassQmcL._AC_SX385_.jpg%27");
+    text-align:center;
+    background-position: top;
+    background-size: 300px 400px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 300px; 
+    height: 400px;
+    content: "\0000a0";
+    padding-left: 5%;
+}
+titulo[imagen="NBA2K2020"]:after{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71XfassQmcL._AC_SL1500_.jpg");
+    text-align:center;
+    background-position: top;
+    background-size: 300px 400px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 300px; 
+    height: 400px;
+    content: "\0000a0";
+    padding-left: 5%;
+}
+
 
 
 tienda:before{
@@ -93,73 +152,16 @@ dificultad{
 
 
 edad_recomendada:before{
-	content: "Edad recomendada:";
-	color: #3a34a6;;
+	content: "Pegi: ";
+	color: #3a34a6;
 	font-weight: bold;
 }
 edad_recomendada{
 	display:block;
 	margin-top:2%;
 }
-edad_recomendada[pegi="3"]:after{
-	background-image: url('https://rating.pegi.info/assets/images/games/age_threshold_icons/3.png');
-	text-align:center;
-	background-position: right;
-    background-size: 35px 30px;
-	background-repeat: no-repeat;
-    display: inline-block;
-    width: 35px; 
-    height: 30px;
-    content: "\0000a0";
-	padding-left: 1%
-}
-edad_recomendada[pegi="7"]:after{
-	background-image: url('https://pegi.info/sites/default/files/inline-images/age-7-black.jpg');
-	text-align:center;
-	background-position: right;
-    background-size: 35px 30px;
-	background-repeat: no-repeat;
-    display: inline-block;
-    width: 35px; 
-    height: 30px;
-    content: "\0000a0";
-	padding-left: 1%
-}
-edad_recomendada[pegi="12"]:after{
-	background-image: url('https://pegi.info/sites/default/files/inline-images/age-12-black.jpg');
-	text-align:center;
-	background-position: right;
-    background-size: 35px 30px;
-	background-repeat: no-repeat;
-    display: inline-block;
-    width: 35px; 
-    height: 30px;
-    content: "\0000a0";
-	padding-left: 1%
-}edad_recomendada[pegi="16"]:after{
-	background-image: url('https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png');
-	text-align:center;
-	background-position: right;
-    background-size: 35px 30px;
-	background-repeat: no-repeat;
-    display: inline-block;
-    width: 35px; 
-    height: 30px;
-    content: "\0000a0";
-	padding-left: 1%
-}
-edad_recomendada[pegi="18"]:after{
-	background-image: url('https://pegi.info/sites/default/files/inline-images/age-18-black%202_0.jpg');
-	text-align:center;
-	background-position: right;
-    background-size: 35px 30px;
-	background-repeat: no-repeat;
-    display: inline-block;
-    width: 35px; 
-    height: 30px;
-    content: "\0000a0";
-	padding-left: 1%
-}
+
+
 
 plataformas:before{
 	content: "Plataformas soportadas: ";
@@ -212,7 +214,6 @@ desarrollador{
 }
 desarrollador[pais_de_origen="España"]:after{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/203px-Flag_of_Spain.svg.png");
-    text-align:center;
     background-position: right;
     background-size: 35px 30px;
     background-repeat: no-repeat;

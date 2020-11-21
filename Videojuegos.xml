@@ -1,36 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="estilos/Videojuegos.css"?>
-<!DOCTYPE VIDEOJUEGOS SYSTEM "Videojuegos.dtd">
 
+<!--<!DOCTYPE VIDEOJUEGOS SYSTEM "Videojuegos.dtd">-->
 
 <VIDEOJUEGOS>
+
 	<videojuego>
-		<titulo version_juego="v1.9.2" duracion="">Minecraft</titulo> 
-		<tienda precio="14,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
+		<titulo imagen="Valorant" version_juego="v1.07" duracion="0">Valorant</titulo> 
+		<tienda precio="0" moneda="0">
+			<!--En el window he agregado el enlace-->
+			<window xmlns:html="http://www.w3.org/1999/xhtml">
+				<html:a href="https://playvalorant.com/es-es/" target="_blank">
+					Riot Games
+				</html:a>
+			</window>
+		</tienda>
 		<idiomas>
 			<idioma>Español</idioma>
+			<idioma>Portugués</idioma>
 			<idioma>Inglés</idioma>
+			<idioma>Ruso</idioma>
+			<idioma>Polaco</idioma>
+			<idioma>Coreano</idioma>
+			<idioma>Chino</idioma>
+			<idioma>Japonés</idioma>
 		</idiomas>
-		<genero>Plataforma</genero>
-		<dificultad>10/10</dificultad>
-		<edad_recomendada pegi="3">PEGI</edad_recomendada>
+		<genero>FPS</genero>
+		<dificultad>Dificil</dificultad>
+		<edad_recomendada>+16</edad_recomendada>
 		<plataformas> <!--Que plataformas soporta-->
-			<plataforma mando="Mando XBOX">XBOX 360</plataforma>
 			<plataforma mando="Teclado y raton">PC</plataforma>
 		</plataformas>
 		<online>Si</online>
-		<anho_de_lanzamiento>1990</anho_de_lanzamiento>
+		<anho_de_lanzamiento>2020</anho_de_lanzamiento>
 		<desarrolladores>
-			<desarrollador pais_de_origen="España">Mariano Rajoy</desarrollador>
-			<desarrollador pais_de_origen="Andorra">Pedro Sánchez</desarrollador>
+			<desarrollador pais_de_origen="Estados Unidos">David Nottingham</desarrollador>
+			<desarrollador pais_de_origen="Estados Unidos">Moby Francke</desarrollador>
+			<desarrollador pais_de_origen="Estados Unidos">Paul Chamberlain</desarrollador>
 		</desarrolladores>
-		<empresa>Majong</empresa> <!--Empresa que vende el juego-->
-		<breve_descripcion>Un juego de bloques pa niños</breve_descripcion>
-		<resenhas>Sí</resenhas>
+		<empresa>Riot Games</empresa> <!--Empresa que vende el juego-->
+		<breve_descripcion>Valorant es un videojuego de disparos en primera persona multijugador gratuito.</breve_descripcion>
+		<resenhas>Si</resenhas>
+		<valoracion>4.5/5</valoracion>
+		<curiosidades>
+			<curiosidad>Gran cantidad de jugadores profesionales de CS:GO migraron a este juego con el fin de aumentar su caché, puesto que muchos ya estaban perdiendo relevancia</curiosidad>
+			<curiosidad>Mixwell es el mejor jugador de España, y considerado por muchos, el mejor de Europa.</curiosidad>
+		</curiosidades>
+	</videojuego>
+	
+	<videojuego>
+		<titulo imagen="CSGO" version_juego="v1.37.6.7" duracion="0">CS:GO</titulo> 
+		<tienda precio="12,49" moneda="E">Steam</tienda>
+		<idiomas>
+			<idioma>Español</idioma>
+			<idioma>Portugués</idioma>
+			<idioma>Inglés</idioma>
+			<idioma>Coreano</idioma>
+			<idioma>Japonés</idioma>
+			<idioma>Ruso</idioma>
+			<idioma>Tailandés</idioma>
+			<idioma>Turco</idioma>
+			<idioma>Chino</idioma>
+			<idioma>Alemán</idioma>
+		</idiomas>
+		<genero>FPS</genero>
+		<dificultad>Dificil</dificultad>
+		<edad_recomendada>+16</edad_recomendada>
+		<plataformas> <!--Que plataformas soporta-->
+			<plataforma mando="Teclado y raton">PC</plataforma>
+			<plataforma mando="mando">XBOX 360</plataforma>
+			<plataforma mando="mando">PS3</plataforma>
+		</plataformas>
+		<online>Si</online>
+		<anho_de_lanzamiento>2012</anho_de_lanzamiento>
+		<desarrolladores>
+			<desarrollador pais_de_origen="Vietnam">Minh Lee</desarrollador>
+			<desarrollador pais_de_origen="Estados Unidos">Jess Cliffe</desarrollador>
+		</desarrolladores>
+		<empresa>Valve Corporation</empresa> <!--Empresa que vende el juego-->
+		<breve_descripcion>CS:GO es un videojuego de disparos en primera persona multijugador.</breve_descripcion>
+		<resenhas>Si</resenhas>
 		<valoracion>4/5</valoracion>
 		<curiosidades>
-			<curiosidad>No hay cuadrados</curiosidad>
-			<curiosidad>Programado en Java</curiosidad>
+			<curiosidad>Es el shooter competitivo más conocido en el mundo.</curiosidad>
+		</curiosidades>
+	</videojuego>
+	
+	<videojuego>
+		<titulo imagen="Overwatch" version_juego="v1.37.6.7" duracion="0">Overwatch</titulo> 
+		<tienda precio="14,99" moneda="E">Instant Gaming</tienda>
+		<idiomas>
+			<idioma>Español</idioma>
+			<idioma>Portugués</idioma>
+			<idioma>Inglés</idioma>
+			<idioma>Coreano</idioma>
+			<idioma>Japonés</idioma>
+			<idioma>Ruso</idioma>
+			<idioma>Tailandés</idioma>
+			<idioma>Francés</idioma>
+			<idioma>Chino</idioma>
+			<idioma>Alemán</idioma>
+		</idiomas>
+		<genero>FPS</genero>
+		<dificultad>Dificil</dificultad>
+		<edad_recomendada>+16</edad_recomendada>
+		<plataformas> <!--Que plataformas soporta-->
+			<plataforma mando="Teclado y raton">PC</plataforma>
+			<plataforma mando="Mando XBOX">XBOX ONE</plataforma>
+			<plataforma mando="Mando Playstation">PS4</plataforma>
+		</plataformas>
+		<online>Si</online>
+		<anho_de_lanzamiento>2016</anho_de_lanzamiento>
+		<desarrolladores>
+			<desarrollador pais_de_origen="Estados Unidos">Jeffrey Kaplan</desarrollador>
+			<desarrollador pais_de_origen="Estados Unidos">Jeremy Craig</desarrollador>
+			<desarrollador pais_de_origen="Estados Unidos">Scott Mercer</desarrollador>
+		</desarrolladores>
+		<empresa>Blizzard</empresa> <!--Empresa que vende el juego-->
+		<breve_descripcion>Overwatch es un videojuego de disparos en primera persona multijugador.</breve_descripcion>
+		<resenhas>Si</resenhas>
+		<valoracion>3/5</valoracion>
+		<curiosidades>
+			<curiosidad>El videojuego de acción de Blizzard tiene la peculiaridad de ser el que ha contado con una beta abierta más grande hasta la fecha.</curiosidad>
 		</curiosidades>
 	</videojuego>
 	
@@ -77,7 +168,7 @@
 	</videojuego>
 	
 	<videojuego>
-		<titulo imagen="NBA2K2020" version_juego="v1" duracion="">NBA 2K21</titulo> 
+		<titulo imagen="NBA2K21" version_juego="v1" >NBA 2K21</titulo> 
 		<tienda precio="59,95" moneda="Euros">Steam</tienda><!--Link compra videojuego-->
 		<idiomas>
 			<idioma>Español</idioma>
@@ -117,7 +208,12 @@
 	
 	<videojuego>
 		<titulo version_juego="v1.9.5" duracion="">Minecraft</titulo> 
-		<tienda precio="14,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
+		<tienda precio="14,99" moneda="E">
+		Steam
+			<window xmlns:html="http://www.w3.org/1999/xhtml">
+			<html:embed src="https://store.steampowered.com/widget/945360/" frameborder="0" width="646" height="190">Link de compra de Among Us</html:embed>
+			</window>
+		</tienda><!--Link compra videojuego-->
 		<idiomas>
 			<idioma>Español</idioma>
 			<idioma>Inglés</idioma>
