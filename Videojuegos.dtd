@@ -1,16 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!ELEMENT VIDEOJUEGOS (genero)+>
-<!ELEMENT genero (videojuego>+>
-	<!ATTLIST genero ID #REQUIRED>
-<!ELEMENT videojuego (titulo, tienda, idiomas, dificultad, edad_recomendada, plataformas, 
+<!ELEMENT genero (videojuego)+>
+	<!ATTLIST genero id ID #REQUIRED>
+<!ELEMENT videojuego (titulo,tiendas,idiomas, dificultad, edad_recomendada, plataformas, 
 online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
 	<!ELEMENT titulo (#PCDATA)>
 		<!ATTLIST titulo 
 		imagen CDATA #IMPLIED
-		version_juego ID #REQUIRED
+		version_juego CDATA #REQUIRED
 		duracion CDATA #IMPLIED>
-	<!ELEMENT tienda (#PCDATA)>
-		<!ATTLIST tienda precio CDATA #REQUIRED 
+	<!ELEMENT tiendas (tienda)+>
+		<!ELEMENT tienda (#PCDATA|window)*>
+			<!ATTLIST tienda precio CDATA #REQUIRED 
 		moneda CDATA #REQUIRED>
+		<!ELEMENT window (html:a|html:embed)>
+			<!ATTLIST window xmlns:html CDATA #REQUIRED>
+			<!ELEMENT html:a (#PCDATA)>
+				<!ATTLIST html:a href CDATA #REQUIRED 
+			target CDATA #REQUIRED>
+			<!ELEMENT html:embed (#PCDATA)>
+				<!ATTLIST html:embed src CDATA #REQUIRED 
+			frameborder CDATA #REQUIRED 
+			width CDATA #REQUIRED 
+			height CDATA #REQUIRED>
 	<!ELEMENT idiomas (idioma+)>
 		<!ELEMENT idioma (#PCDATA)>
 	<!ELEMENT dificultad (#PCDATA)>
@@ -30,4 +42,5 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 	<!ELEMENT valoracion (#PCDATA)>
 	<!ELEMENT curiosidades (curiosidad+)>
 		<!ELEMENT curiosidad (#PCDATA)>
+	
 	
