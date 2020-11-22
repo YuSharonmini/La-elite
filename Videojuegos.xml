@@ -7,14 +7,16 @@
 	<genero id="FPS">
 		<videojuego>
 			<titulo imagen="Valorant" version_juego="v1.07" duracion="0">Valorant</titulo> 
-			<tienda precio="0" moneda="0">
-				<!--En el window he agregado un elemento de html-->
-				<window xmlns:html="http://www.w3.org/1999/xhtml">
-					<html:a href="https://playvalorant.com/es-es/" target="_blank">
+			<tiendas>
+				<tienda precio="0" moneda="0">
+					<!--En el window he agregado un elemento de html-->
+					<window xmlns:html="http://www.w3.org/1999/xhtml">
+						<html:a href="https://playvalorant.com/es-es/" target="_blank">
 						Riot Games
-					</html:a>
-				</window>
-			</tienda>
+						</html:a>
+					</window>
+				</tienda>
+			</tiendas>
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Portugués</idioma>
@@ -49,7 +51,9 @@
 	
 		<videojuego>
 			<titulo imagen="CSGO" version_juego="v1.37.6.7" duracion="0">CS:GO</titulo> 
-			<tienda precio="12,49" moneda="E">Steam</tienda>
+			<tiendas>	
+				<tienda precio="0" moneda="0">Steam</tienda>
+			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Portugués</idioma>
@@ -85,8 +89,10 @@
 		</videojuego>
 	
 		<videojuego>
-			<titulo imagen="Overwatch" version_juego="v1.37.6.7" duracion="0">Overwatch</titulo> 
-			<tienda precio="14,99" moneda="E">Instant Gaming</tienda>
+			<titulo imagen="Overwatch" version_juego="Digital" duracion="0">Overwatch</titulo> 
+			<tiendas>
+				<tienda precio="14,99" moneda="E">Instant Gaming</tienda>
+			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Portugués</idioma>
@@ -126,7 +132,9 @@
 	<genero id="Deportes">
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
-			<tienda precio="9,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
+			<tiendas>
+				<tienda precio="9,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
+			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -167,7 +175,9 @@
 
 		<videojuego>
 			<titulo imagen="NBA2K21" version_juego="v1" >NBA 2K21</titulo> 
-			<tienda precio="59,95" moneda="Euros">Steam</tienda><!--Link compra videojuego-->
+			<tiendas>	
+				<tienda precio="59,95" moneda="Euros">Steam</tienda><!--Link compra videojuego-->
+			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -183,8 +193,8 @@
 			<plataformas> 
 				<plataforma mando="Mando XBOX">XBOX X / XBOX Y</plataforma>
 				<plataforma mando="Teclado y raton">PC</plataforma>
-				<plataforma mando="Mando Playstation">Playstation 5</plataforma>
-				<plataforma mando="Mando Playstation">Playstation 4</plataforma>
+				<plataforma mando="DualShock5">Playstation 5</plataforma>
+				<plataforma mando="DualShock4">Playstation 4</plataforma>
 				<plataforma mando="Teclado y raton">Google Stadia</plataforma>
 				<plataforma mando="Mando Switch">Nintendo Switch</plataforma>
 			</plataformas>
@@ -206,13 +216,15 @@
 
 	<genero id="Plataformas">
 		<videojuego>
-			<titulo version_juego="v1.9.5" duracion="">Minecraft</titulo> 
-			<tienda precio="14,99" moneda="E">
+			<titulo version_juego="v1.16.4" duracion="ilimitado">Minecraft</titulo>
+			<tiendas>	
+				<tienda precio="14,99" moneda="E">
 			Steam
 				<window xmlns:html="http://www.w3.org/1999/xhtml">
 				<html:embed src="https://store.steampowered.com/widget/945360/" frameborder="0" width="646" height="190">Link de compra de Among Us</html:embed>
 				</window>
 			</tienda><!--Link compra videojuego-->
+			</tiendas>
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -240,11 +252,13 @@
 		</videojuego>
 	</genero>
 	
-	<genero id="Rol/RPG">	
+	<genero id="RPG">	
 		<videojuego>
 
 			<titulo version_juego="CD-ROM" duracion="39 horas">Final Fantasy VII</titulo>
-			<tienda precio="11,99" moneda="euros">Steam</tienda>
+			<tiendas>	
+				<tienda precio="11,99" moneda="euros">Steam</tienda>
+			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -253,15 +267,15 @@
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="teclado">PC</plataforma>
+				<plataforma mando ="Teclado y raton">PC</plataforma>
 				<plataforma mando ="DualShock4">PS1</plataforma>
 			</plataformas>
 			<online>No</online>
 			<anho_de_lanzamiento>1997</anho_de_lanzamiento>
 			<desarrolladores>
-				<desarrollador pais_de_origen="Japón">Square</desarrollador>
+				<desarrollador pais_de_origen="Japón">Square Enix</desarrollador>
 			</desarrolladores>
-			<empresa>Square</empresa>
+			<empresa>Square Enix</empresa>
 			<breve_descripcion>
 			Se trata de la séptima entrega de la famosa saga de Final Fantasy.Cloud 
 			y sus aliados se ven envueltos en un conflicto que representa una amenaza aún mayor para 
@@ -285,7 +299,9 @@
 		<videojuego>
 			
 			<titulo version_juego="Digital" duracion="8 horas">Undertale</titulo>
-			<tienda precio="10" moneda="euros">Steam</tienda>
+			<tiendas>
+				<tienda precio="10" moneda="euros">Steam</tienda>
+			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -295,7 +311,7 @@
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="12">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="teclado">PC</plataforma>
+				<plataforma mando ="Teclado y raton">PC</plataforma>
 				<plataforma mando ="DualShock4">PS4</plataforma>
 			</plataformas>
 			<online>No</online>
@@ -303,7 +319,7 @@
 			<desarrolladores>
 				<desarrollador pais_de_origen="EEUU">Toby Fox</desarrollador>
 			</desarrolladores>
-			<empresa>Toby Fox</empresa>
+			<empresa>Toby Fox (Independiente)</empresa>
 			<breve_descripcion>
 			Desarrollado independientemente por Toby Fox, este juego nos muestra la perspectiva de
 			un niño humano, caído en un mundo subterráneo conocido como "subsuelo", a lo largo del 
@@ -327,7 +343,9 @@
 
 		<videojuego>
 		<titulo version_juego="Cartucho de NDS" duracion="35 horas">Pokemon Platino</titulo>
-			<tienda precio="30" moneda="euros">Nintendo eShop</tienda>
+			<tiendas>
+				<tienda precio="30" moneda="euros">Nintendo eShop</tienda>
+			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -336,9 +354,9 @@
 			<dificultad>Fácil/Media</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="consola">Nintendo DS</plataforma>
+				<plataforma mando ="DS">Nintendo DS</plataforma>
 			</plataformas>
-			<online>Si</online>
+			<online>Sí</online>
 			<anho_de_lanzamiento>2008/2009</anho_de_lanzamiento>
 			<desarrolladores>
 				<desarrollador pais_de_origen="Japón">Game Freak</desarrollador>
@@ -363,5 +381,106 @@
 			</curiosidades>
 		</videojuego>
 	</genero>	
+	
+	<genero id="Carreras">
 
+		<videojuego>
+			<titulo imagen="forza" version_juego="Digital" duracion="Ilimitado">Forza Horizon 4</titulo>
+			<tiendas>
+				<tienda precio="33" moneda="euros">Microsoft Store</tienda>
+			</tiendas>
+			<idiomas>
+				<idioma>Idiomas aceptados por Microsoft</idioma>
+			</idiomas>
+			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
+			<edad_recomendada pegi="3">PEGI</edad_recomendada>
+			<plataformas>
+				<plataforma mando ="Mando XBOX">XBOX ONE</plataforma>
+				<plataforma mando ="Teclado y ratón">PC (Windows)</plataforma>
+			</plataformas>
+			<online>Sí</online>
+			<anho_de_lanzamiento>2018</anho_de_lanzamiento>
+			<desarrolladores>
+				<desarrollador pais_de_origen="Reino Unido">Playground Games</desarrollador>
+			</desarrolladores>
+			<empresa>Microsoft</empresa>
+			<breve_descripcion>
+			Forza Horizon 4 es el catorceavo juego de la saga Forza, y más concretamente la cuarta parte de la subsaga Horizon. 
+			Con respecto a otros juegos de carreras, en los que se nos ofrece una enorme profundidad histórica, o un listado simple
+			de carreras, Forza deja al jugador en libertad, en un precioso y bien definido mundo abierto, con un enorme abanico de
+			coches a elegir, desde los más clásicos, hasta los más inusuales y bizarros; así como infinitas posibilidades de personalización.
+			</breve_descripcion>
+			<resenhas>
+			Si bien el cambio con respecto a anteriores entregas de la saga es mínimo, Forza Horizon 4 resulta muy divertido
+			y permite al usuario disfrutar de una experiencia única, no solo a nivel de jugabilidad, sino también a nivel gráfico,
+			aspecto en el que esta saga aventaja a otras de su competencia.
+			</resenhas>
+			<valoracion>9/10</valoracion>
+			<curiosidades>
+				<curiosidad>
+				Debido a posibles fallos en los datos del juego, o a versiones desactualizadas de XBOX, algunos jugadores se han encontrado con un
+				coche cuyo nombre es "NULL CAR". Este aparece cuando el juego no puede mostrar al usuario el coche que debería estar en ese lugar,
+				y lo sustituye con un vehículo predeterminado, concretamente un Ford Falcon negro, carente de personalizaciones y/o símbolos identificativos.
+				</curiosidad>
+				<curiosidad>
+				Uno de los NPCs a los que podemos enfrentarnos, M. Rossi, es conocido por ser especialmente duro de batir, siendo considerado una leyenda.
+				</curiosidad>
+			</curiosidades>
+		</videojuego>
+		
+		<videojuego>
+			<titulo imagen="nfs" version_juego="Digital" duracion="Ilimitado">Need For Speed:Hot Pursuit Remastered</titulo>
+			<tiendas>
+				<tienda precio="29,99" moneda="euros">Steam
+				<window xmlns:html="http://www.w3.org/1999/xhtml">
+					<html:embed src="https://store.steampowered.com/widget/1328660/" frameborder="0" width="646" height="190">Link de compra de Steam</html:embed>
+				</window>
+				</tienda>
+			</tiendas>
+			<idiomas>
+				<idioma>Español</idioma>
+				<idioma>Inglés</idioma>
+				<idioma>Francés</idioma>
+				<idioma>Alemán</idioma>
+				<idioma>Italiano</idioma>
+				<idioma>Japonés</idioma>
+				<idioma>Holandés</idioma>
+				<idioma>Polaco</idioma>
+				<idioma>Chino tradicional</idioma>
+				<idioma>Ruso</idioma>
+			</idiomas>
+			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
+			<edad_recomendada pegi="3">PEGI</edad_recomendada>
+			<plataformas>
+				<plataforma mando ="Mando XBOX">XBOX ONE</plataforma>
+				<plataforma mando ="Teclado y ratón">PC (Windows)</plataforma>
+				<plataforma mando ="DualShock4">PS4</plataforma>
+				<plataforma mando ="Mando Switch">Nintendo Switch</plataforma>
+			</plataformas>
+			<online>Sí</online>
+			<anho_de_lanzamiento>2020</anho_de_lanzamiento>
+			<desarrolladores>
+				<desarrollador pais_de_origen="Reino Unido">Stellar Entertainment</desarrollador>
+			</desarrolladores>
+			<empresa>Electronic Arts</empresa>
+			<breve_descripcion>
+			Need For Speed:Hot Pursuit Remastered es el juego soñado por los más incondicionales de la aclamada saga. Una remasterización de 
+			un juego que ya triunfó en su momento, manteniendo la esencia de aquello que le llevó al olimpo del género. Persecuciones tan increibles como las
+			del juego original, ahora con un toque especial de modernidad. Las mejoras en gráficos y físicas, así como la adición de nuevas posibilidades, hacen
+			de este un juego magnífico para quienes ya disfrutaron del anterior, sin dejar atrás a aquellos que no lo hicieron.
+			</breve_descripcion>
+			<resenhas>
+			Este nuevo Need For Speed cumple con creces el nivel esperado, y la expectación generada por ser un remaster de un clásico de la saga. Sin embargo,
+			al igual que ocurre con la mayoría de remasterizaciones, muchos fans se quejan de la escasez de nuevos contenidos y algunos incluso del precio. Pero,
+			¿no es parecerse al juego original precisamente el objetivo que se persigue? Quizá podrían haberlo hecho mejor, pero sin duda, este NFS cumple con lo esperado.
+			</resenhas>
+			<valoracion>8/10</valoracion>
+			<curiosidades>
+				<curiosidad>
+				El juego ha sido lanzado a solo diez días de cumplirse el décimo aniversario del lanzamiento de la versión original. Una especie de homenaje por parte de los desarrolladores.
+				</curiosidad>
+			</curiosidades>
+		</videojuego>
+
+	</genero>
 </VIDEOJUEGOS>
