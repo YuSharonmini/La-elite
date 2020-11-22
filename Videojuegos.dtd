@@ -1,5 +1,6 @@
-<!ELEMENT VIDEOJUEGOS (videojuego)+>
-<!ELEMENT videojuego (titulo, tienda, idiomas, genero, dificultad, edad_recomendada, plataformas, 
+<!ELEMENT VIDEOJUEGOS (genero)+>
+<!ELEMENT genero (videojuego>+>
+<!ELEMENT videojuego (titulo, tienda, idiomas, dificultad, edad_recomendada, plataformas, 
 online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
 	<!ELEMENT titulo (#PCDATA)>
 		<!ATTLIST titulo 
@@ -11,7 +12,6 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 		moneda CDATA #REQUIRED>
 	<!ELEMENT idiomas (idioma+)>
 		<!ELEMENT idioma (#PCDATA)>
-	<!ELEMENT genero (#PCDATA)>
 	<!ELEMENT dificultad (#PCDATA)>
 	<!ELEMENT edad_recomendada (#PCDATA)>
 		<!ATTLIST edad_recomendada pegi CDATA #REQUIRED>
