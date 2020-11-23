@@ -4,7 +4,7 @@
 <!--<!DOCTYPE VIDEOJUEGOS SYSTEM "Videojuegos.dtd">-->
 
 <VIDEOJUEGOS>
-	<genero id="FPS">
+	<GENERO genero="FPS">
 		<videojuego>
 			<titulo imagen="Valorant" version_juego="v1.07" duracion="0">Valorant</titulo> 
 			<tiendas>
@@ -127,9 +127,9 @@
 				<curiosidad>El videojuego de acción de Blizzard tiene la peculiaridad de ser el que ha contado con una beta abierta más grande hasta la fecha.</curiosidad>
 			</curiosidades>
 		</videojuego>
-	</genero>	
+	</GENERO>	
 	
-	<genero id="Deportes">
+	<GENERO id="Deportes">
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
 			<tiendas>
@@ -212,9 +212,9 @@
 				<curiosidad>Con posibilidad de la Edición Mamba, tributo al fallecido Kobe Bryant</curiosidad>
 			</curiosidades>
 		</videojuego>
-	</genero>
+	</GENERO>
 
-	<genero id="Plataformas">
+	<GENERO id="Plataformas">
 		<videojuego>
 			<titulo version_juego="v1.16.4" duracion="ilimitado">Minecraft</titulo>
 			<tiendas>	
@@ -250,9 +250,9 @@
 				<curiosidad>Programado en Java</curiosidad>
 			</curiosidades>
 		</videojuego>
-	</genero>
+	</GENERO>
 	
-	<genero id="RPG">	
+	<GENERO id="RPG">	
 		<videojuego>
 
 			<titulo version_juego="CD-ROM" duracion="39 horas">Final Fantasy VII</titulo>
@@ -380,9 +380,9 @@
 				</curiosidad>
 			</curiosidades>
 		</videojuego>
-	</genero>	
+	</GENERO>	
 	
-	<genero id="Carreras">
+	<GENERO id="Carreras">
 
 		<videojuego>
 			<titulo imagen="forza" version_juego="Digital" duracion="Ilimitado">Forza Horizon 4</titulo>
@@ -482,5 +482,5 @@
 			</curiosidades>
 		</videojuego>
 
-	</genero>
+	</GENERO>
 </VIDEOJUEGOS>

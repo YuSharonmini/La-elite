@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!ELEMENT VIDEOJUEGOS (genero)+>
 <!ELEMENT genero (videojuego)+>
-	<!ATTLIST genero id ID #REQUIRED>
+	<!ATTLIST GENERO genero ID #REQUIRED>
 <!ELEMENT videojuego (titulo,tiendas,idiomas, dificultad, edad_recomendada, plataformas, 
 online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
 	<!ELEMENT titulo (#PCDATA)>
