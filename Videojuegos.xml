@@ -255,7 +255,7 @@
 	<GENERO id="RPG">	
 		<videojuego>
 
-			<titulo version_juego="CD-ROM" duracion="39 horas">Final Fantasy VII</titulo>
+			<titulo imagen="Final Fantasy VII" version_juego="CD-ROM" duracion="39 horas">Final Fantasy VII</titulo>
 			<tiendas>	
 				<tienda precio="11,99" moneda="euros">Steam</tienda>
 			</tiendas>	
@@ -298,7 +298,7 @@
 
 		<videojuego>
 			
-			<titulo version_juego="Digital" duracion="8 horas">Undertale</titulo>
+			<titulo imagen="Undertale" version_juego="Digital" duracion="8 horas">Undertale</titulo>
 			<tiendas>
 				<tienda precio="10" moneda="euros">Steam</tienda>
 			</tiendas>	
@@ -342,7 +342,7 @@
 		</videojuego>
 
 		<videojuego>
-		<titulo version_juego="Cartucho de NDS" duracion="35 horas">Pokemon Platino</titulo>
+		<titulo imagen="Pokemon Platino" version_juego="Cartucho de NDS" duracion="35 horas">Pokemon Platino</titulo>
 			<tiendas>
 				<tienda precio="30" moneda="euros">Nintendo eShop</tienda>
 			</tiendas>	
