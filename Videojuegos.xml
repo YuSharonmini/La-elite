@@ -46,6 +46,7 @@
 			<curiosidades>
 				<curiosidad>Gran cantidad de jugadores profesionales de CS:GO migraron a este juego con el fin de aumentar su caché, puesto que muchos ya estaban perdiendo relevancia</curiosidad>
 				<curiosidad>Mixwell es el mejor jugador de España, y considerado por muchos, el mejor de Europa.</curiosidad>
+				<curiosidad>El rango máximo alcanzado por Álvaro, integrante de este grupo, es un triste Bronce 3</curiosidad>
 			</curiosidades>
 		</videojuego>
 	
@@ -129,7 +130,7 @@
 		</videojuego>
 	</GENERO>	
 	
-	<GENERO id="Deportes">
+	<GENERO genero="Deportes">
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
 			<tienda precio="9,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
@@ -243,7 +244,7 @@
 	</videojuego>
 	</GENERO>
 
-	<GENERO id="Plataformas">
+	<GENERO genero="Plataformas">
 		<videojuego>
 			<titulo version_juego="v1.16.4" duracion="ilimitado">Minecraft</titulo>
 			<tiendas>	
@@ -281,7 +282,7 @@
 		</videojuego>
 	</GENERO>
 	
-	<GENERO id="RPG">	
+	<GENERO genero="RPG">	
 		<videojuego>
 
 			<titulo imagen="Final Fantasy VII" version_juego="CD-ROM" duracion="39 horas">Final Fantasy VII</titulo>
@@ -411,7 +412,7 @@
 		</videojuego>
 	</GENERO>	
 	
-	<GENERO id="Carreras">
+	<GENERO genero="Carreras">
 
 		<videojuego>
 			<titulo imagen="forza" version_juego="Digital" duracion="Ilimitado">Forza Horizon 4</titulo>
@@ -510,6 +511,47 @@
 				</curiosidad>
 			</curiosidades>
 		</videojuego>
-
+	</GENERO>
+	<GENERO genero="Musica">
+		<videojuego>
+			<titulo imagen="GuitarHero" version_juego="0" duracion="0">GuitarHero III: Legends of Rock</titulo> 
+			<tiendas>
+				<tienda precio="0" moneda="0">Descatalogado</tienda>
+			</tiendas>
+			<idiomas>
+				<idioma>Español</idioma>
+				<idioma>Inglés</idioma>
+				<idioma>Francés</idioma>
+				<idioma>Alemán</idioma>
+				<idioma>Italiano</idioma>
+				<idioma>Holandés</idioma>
+				<idioma>Polaco</idioma>
+			</idiomas>
+			<dificultad>Dificil</dificultad>
+			<edad_recomendada pegi="12">PEGI</edad_recomendada>
+			<plataformas> <!--Que plataformas soporta-->
+				<plataforma mando="Guitarra">WII</plataforma>
+				<plataforma mando="Guitarra">PS2</plataforma>
+				<plataforma mando="Guitarra">PS3</plataforma>
+				<plataforma mando="Guitarra">XBOX360</plataforma>
+				<plataforma mando="Teclado y ratón">PC</plataforma>
+			</plataformas>
+			<online>Si</online>
+			<anho_de_lanzamiento>2007</anho_de_lanzamiento>
+			<desarrolladores>
+				<desarrollador pais_de_origen="Estados Unidos">Neversoft</desarrollador>
+				<desarrollador pais_de_origen="Estados Unidos">Aspur Media</desarrollador>
+				<desarrollador pais_de_origen="Estados Unidos">Vicarious Visions</desarrollador>
+			</desarrolladores>
+			<empresa>Activision</empresa> <!--Empresa que vende el juego-->
+			<breve_descripcion>Guitar Hero III es un videojuego de música en el que se utiliza un control en forma de guitarra para tocar diversas canciones</breve_descripcion>
+			<resenhas>Si</resenhas>
+			<valoracion>5/5</valoracion>
+			<curiosidades>
+				<curiosidad>Debido a que el guitarrista de Guns N' Roses Slash aparecía en el juego, el líder de la banda Axl Rose decidió demandar a Activision.</curiosidad>
+				<curiosidad>La capacidad de tocar la canción "Through the Fire and Flames" en modo difícil está al alcance de muy pocos.</curiosidad>
+				<curiosidad>Vendió tantas unidades que Activision tuvo problemas para abastecer la fuerte demanda.</curiosidad>
+			</curiosidades>
+		</videojuego>
 	</GENERO>
 </VIDEOJUEGOS>
