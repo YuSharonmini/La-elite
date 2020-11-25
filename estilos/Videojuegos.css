@@ -106,13 +106,13 @@ titulo[imagen="NBA2K21"]:after{
 	border-color: #3a34a6;
 	float: right;
 }
-titulo[imagen="Captain Tsubasa"]:after{
-	background-image: url('https://images-na.ssl-images-amazon.com/images/I/81iPC8%2BQ81L._AC_SX385_.jpg');
+titulo[imagen="CAPTAINTSUBASA"]:after{
+	background-image: url("https://images-na.ssl-images-amazon.com/images/I/81iPC8%2BQ81L._AC_SX385_.jpg");
     text-align:center;
     background-position: top;
-    background-size: 400px 400px;
+    background-size: 300px 400px;
     display: block;
-    width: 400px; 
+    width: 300px; 
     height: 400px;
     content: "\0000a0";
 	border: solid;
@@ -401,7 +401,54 @@ desarrollador[pais_de_origen="Reino Unido"]:after{
     padding-left: 1%;
 	padding-top: 2px
 } 
-
+desarrollador[pais_de_origen="Estados Unidos"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/203px-Flag_of_the_United_States.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+desarrollador[pais_de_origen="Japon"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/203px-Flag_of_Japan.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+desarrollador[pais_de_origen="Canada"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/203px-Flag_of_Canada_%28Pantone%29.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+desarrollador[pais_de_origen="Rumania"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/203px-Flag_of_Romania.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
 
 empresa:before{
 	content: "Empresa desarrolladora: ";
