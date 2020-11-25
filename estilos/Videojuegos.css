@@ -106,6 +106,58 @@ titulo[imagen="NBA2K21"]:after{
 	border-color: #3a34a6;
 	float: right;
 }
+titulo[imagen="Captain Tsubasa"]:after{
+	background-image: url('https://images-na.ssl-images-amazon.com/images/I/81iPC8%2BQ81L._AC_SX385_.jpg');
+    text-align:center;
+    background-position: top;
+    background-size: 400px 400px;
+    display: block;
+    width: 400px; 
+    height: 400px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
+titulo[imagen="Final Fantasy VII"]:after{
+	background-image: url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_FinalFantasyVII.jpg');
+    text-align:center;
+    background-position: top;
+    background-size: 400px 400px;
+    display: block;
+    width: 400px; 
+    height: 400px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
+titulo[imagen="Undertale"]:after{
+	background-image: url('https://image.api.playstation.com/cdn/UP3893/CUSA08801_00/pDm46Nye9OTyuH210Se9cWyCVx7OuXWb.png');
+    text-align:center;
+    background-position: top;
+    background-size: 300px 300px;
+    display: block;
+    width: 300px; 
+    height: 300px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
+titulo[imagen="Pokemon Platino"]:after{
+	background-image: url('https://www.eliteguias.com/img/caratulas/_og_/pokemon-platino.jpg');
+    text-align:center;
+    background-position: top;
+    background-size: 300px 300px;
+    display: block;
+    width: 300px; 
+    height: 300px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
 titulo[imagen="forza"]:after{
 	background-image: url("https://i.blogs.es/04f504/120718-fh4-tlqns/1366_2000.jpg");
     text-align:center;
