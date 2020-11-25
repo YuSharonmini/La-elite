@@ -132,9 +132,7 @@
 	<GENERO id="Deportes">
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
-			<tiendas>
-				<tienda precio="9,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
-			</tiendas>	
+			<tienda precio="9,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -169,7 +167,8 @@
 			<valoracion>3.5/5</valoracion>
 			<curiosidades>
 				<curiosidad>El juego que más enfados produce</curiosidad>
-				<curiosidad>Incluye nuevo modo urbano llamado "VOLTA"</curiosidad>
+				<curiosidad>Incluye nuevo modo urbano llamado "VOLTA Football"</curiosidad>
+				<curiosidad>Primera vez que se incluye la licencia de un equipo de Emiratos Arabes, Al-Ain Football Club</curiosidad>
 			</curiosidades>
 		</videojuego>
 
@@ -188,7 +187,7 @@
 				<idioma>Coreano</idioma>
 				<idioma>Chino</idioma>
 			</idiomas>
-			<dificultad>7/10</dificultad>
+			<dificultad>Fácil/Media</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
 			<plataformas> 
 				<plataforma mando="Mando XBOX">XBOX X / XBOX Y</plataforma>
@@ -201,17 +200,47 @@
 			<online>Si</online>
 			<anho_de_lanzamiento>2020</anho_de_lanzamiento>
 			<desarrolladores>
-				<desarrollador pais_de_origen="EEUU">Visual Concepts</desarrollador>
+				<desarrollador pais_de_origen="Estados Unidos">Visual Concepts</desarrollador>
 			</desarrolladores>
 			<empresa>Visual Concepts</empresa> 
-			<breve_descripcion>Videojuego de la NBA</breve_descripcion>
+			<breve_descripcion>NBA 2K21 es un videojuego de simulación de baloncestodesarrollado por Visual Concepts y publicado por 2K Sports , basado en la Asociación Nacional de Baloncesto ( NBA ). Es la 22a entrega de lafranquicia NBA 2K y la sucesora de NBA 2K20.</breve_descripcion>
 			<resenhas>Sí</resenhas>
 			<valoracion>2/5</valoracion>
 			<curiosidades>
 				<curiosidad>Mala crítica entre los usuarios</curiosidad>
-				<curiosidad>Con posibilidad de la Edición Mamba, tributo al fallecido Kobe Bryant</curiosidad>
+				<curiosidad>Con posibilidad de compra de la Edición Mamba Forever, tributo al fallecido Kobe Bryant</curiosidad>
 			</curiosidades>
 		</videojuego>
+		
+		<videojuego>
+		<titulo imagen="CAPTAINTSUBASA" version_juego="v1.2" duracion="">Captain Tsubasa: Rise of New Champions</titulo> 
+		<tienda precio="49,95" moneda="E">Steam</tienda><!--Link compra videojuego-->
+		<idiomas>
+			<idioma>Español</idioma>
+			<idioma>Inglés</idioma>
+			<idioma>Japones</idioma>
+		</idiomas>
+		<dificultad>Fácil</dificultad>
+		<edad_recomendada pegi="7">PEGI</edad_recomendada>
+		<plataformas> 
+			<plataforma mando="Mando XBOX">XBOX 360</plataforma>
+			<plataforma mando="Mando Playstation">Playstation 4</plataforma>
+			<plataforma mando="Teclado y raton">PC</plataforma>
+		</plataformas>
+		<online>Si</online>
+		<anho_de_lanzamiento>2020</anho_de_lanzamiento>
+		<desarrolladores>
+			<desarrollador pais_de_origen="Japon">Tamsoft</desarrollador>
+		</desarrolladores>
+		<empresa>Banda Namco Entertainment</empresa> 
+		<breve_descripcion>Videojuego dirigido a los fans del anime o el manga, ya que lo que busca no es ofrecer un buen título de fútbol arcade, sino una muy excelente recreación de los espectaculares partidos de la serie.</breve_descripcion>
+		<resenhas>Sí</resenhas>
+		<valoracion>3/5</valoracion>
+		<curiosidades>
+			<curiosidad>Muy buena animación con la posibilidad de jugar en versión original</curiosidad>
+			<curiosidad>Posibilidad de rememorar los momentos más icónicos de la serie</curiosidad>
+		</curiosidades>
+	</videojuego>
 	</GENERO>
 
 	<GENERO id="Plataformas">
