@@ -14,7 +14,7 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<!ATTLIST tienda precio CDATA #REQUIRED 
 		moneda CDATA #REQUIRED>
 		<!ELEMENT window (html:a|html:embed)>
-			<!ATTLIST window xmlns:html CDATA #REQUIRED>
+			<!ATTLIST window xmlns:html CDATA #FIXED "http://www.w3.org/1999/xhtml">
 			<!ELEMENT html:a (#PCDATA)>
 				<!ATTLIST html:a href CDATA #REQUIRED 
 			target CDATA #REQUIRED>
