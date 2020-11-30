@@ -133,7 +133,9 @@
 	<GENERO genero="Deportes">
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
+			<tiendas>
 			<tienda precio="9,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
+			</tiendas>
 			<idiomas>
 				<idioma>Español</idioma>
 				<idioma>Inglés</idioma>
@@ -215,7 +217,9 @@
 		
 		<videojuego>
 		<titulo imagen="CAPTAINTSUBASA" version_juego="v1.2" duracion="">Captain Tsubasa: Rise of New Champions</titulo> 
+		<tiendas>
 		<tienda precio="49,95" moneda="E">Steam</tienda><!--Link compra videojuego-->
+		</tiendas>
 		<idiomas>
 			<idioma>Español</idioma>
 			<idioma>Inglés</idioma>
