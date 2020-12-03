@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!ELEMENT VIDEOJUEGOS (GENERO)+>
+	<!ATTLIST VIDEOJUEGOS xmlns:html CDATA #FIXED "http://www.w3.org/1999/xhtml">
 <!ELEMENT GENERO (videojuego)+>
 	<!ATTLIST GENERO genero ID #REQUIRED>
 <!ELEMENT videojuego (titulo,tiendas,idiomas, dificultad, edad_recomendada, plataformas, 
@@ -14,7 +15,6 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<!ATTLIST tienda precio CDATA #REQUIRED 
 		moneda CDATA #REQUIRED>
 		<!ELEMENT window (html:a|html:embed)>
-			<!ATTLIST window xmlns:html CDATA #FIXED "http://www.w3.org/1999/xhtml">
 			<!ELEMENT html:a (#PCDATA)>
 				<!ATTLIST html:a href CDATA #REQUIRED 
 			target CDATA #REQUIRED>
