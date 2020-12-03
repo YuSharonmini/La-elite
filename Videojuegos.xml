@@ -128,7 +128,7 @@
 		<videojuego>
 			<titulo imagen="Overwatch" version_juego="Digital" duracion="0">Overwatch</titulo> 
 			<tiendas>
-				<tienda precio="14,99" moneda="E">Instant Gaming</tienda>
+				<tienda precio="14.99" moneda="E">Instant Gaming</tienda>
 			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
@@ -170,7 +170,7 @@
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
 			<tiendas>
-			<tienda precio="9,99" moneda="E">Steam</tienda><!--Link compra videojuego-->
+			<tienda precio="9.99" moneda="E">Steam</tienda><!--Link compra videojuego-->
 			</tiendas>
 			<idiomas>
 				<idioma>Español</idioma>
@@ -214,7 +214,7 @@
 		<videojuego>
 			<titulo imagen="NBA2K21" version_juego="v1" >NBA 2K21</titulo> 
 			<tiendas>	
-				<tienda precio="59,95" moneda="Euros">Steam</tienda><!--Link compra videojuego-->
+				<tienda precio="59.95" moneda="Euros">Steam</tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
@@ -254,7 +254,7 @@
 		<videojuego>
 		<titulo imagen="CAPTAINTSUBASA" version_juego="v1.2" duracion="">Captain Tsubasa: Rise of New Champions</titulo> 
 		<tiendas>
-		<tienda precio="49,95" moneda="E">Steam</tienda><!--Link compra videojuego-->
+		<tienda precio="49.95" moneda="E">Steam</tienda><!--Link compra videojuego-->
 		</tiendas>
 		<idiomas>
 			<idioma>Español</idioma>
@@ -288,7 +288,7 @@
 		<videojuego>
 			<titulo version_juego="v1.16.4" duracion="ilimitado">Minecraft</titulo>
 			<tiendas>	
-				<tienda precio="14,99" moneda="E">
+				<tienda precio="14.99" moneda="E">
 			Steam
 				<window xmlns:html="http://www.w3.org/1999/xhtml">
 				<html:embed src="https://store.steampowered.com/widget/945360/" frameborder="0" width="646" height="190">Link de compra de Among Us</html:embed>
@@ -327,7 +327,7 @@
 
 			<titulo imagen="Final Fantasy VII" version_juego="CD-ROM" duracion="39 horas">Final Fantasy VII</titulo>
 			<tiendas>	
-				<tienda precio="11,99" moneda="euros">Steam</tienda>
+				<tienda precio="11.99" moneda="euros">Steam</tienda>
 			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
@@ -370,7 +370,7 @@
 			
 			<titulo imagen="Undertale" version_juego="Digital" duracion="8 horas">Undertale</titulo>
 			<tiendas>
-				<tienda precio="10" moneda="euros">Steam</tienda>
+				<tienda precio="9.99" moneda="euros">Steam</tienda>
 			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
@@ -414,7 +414,7 @@
 		<videojuego>
 		<titulo imagen="Pokemon Platino" version_juego="Cartucho de NDS" duracion="35 horas">Pokemon Platino</titulo>
 			<tiendas>
-				<tienda precio="30" moneda="euros">Nintendo eShop</tienda>
+				<tienda precio="29.95" moneda="euros">Nintendo eShop</tienda>
 			</tiendas>	
 			<idiomas>
 				<idioma>Español</idioma>
@@ -457,7 +457,7 @@
 		<videojuego>
 			<titulo imagen="forza" version_juego="Digital" duracion="Ilimitado">Forza Horizon 4</titulo>
 			<tiendas>
-				<tienda precio="33" moneda="euros">Microsoft Store</tienda>
+				<tienda precio="32.95" moneda="euros">Microsoft Store</tienda>
 			</tiendas>
 			<idiomas>
 				<idioma>Idiomas aceptados por Microsoft</idioma>
@@ -501,7 +501,7 @@
 		<videojuego>
 			<titulo imagen="nfs" version_juego="Digital" duracion="Ilimitado">Need For Speed:Hot Pursuit Remastered</titulo>
 			<tiendas>
-				<tienda precio="29,99" moneda="euros">Steam
+				<tienda precio="29.99" moneda="euros">Steam
 				<window xmlns:html="http://www.w3.org/1999/xhtml">
 					<html:embed src="https://store.steampowered.com/widget/1328660/" frameborder="0" width="646" height="190">Link de compra de Steam</html:embed>
 				</window>
@@ -555,7 +555,7 @@
 		<videojuego>
 			<titulo imagen="MarioKart8" version_juego="v8.0.3.1.2345" duracion="0">Mario Kart 8 Deluxe</titulo>
 			<tiendas>
-				<tienda precio="59,99" moneda="euros">
+				<tienda precio="59.99" moneda="euros">
 					<html:a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html" target="_blank">Nintendo</html:a>
 				</tienda>
 			</tiendas>
