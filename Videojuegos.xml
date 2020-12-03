@@ -3,18 +3,54 @@
 
 <!--<!DOCTYPE VIDEOJUEGOS SYSTEM "Videojuegos.dtd">-->
 
-<VIDEOJUEGOS>
+<VIDEOJUEGOS xmlns:html="http://www.w3.org/1999/xhtml">
 	<GENERO genero="FPS">
+		<videojuego>
+			<titulo imagen="PUBG Mobile" version_juego="v19.2.31.2" duracion="0">PUBG Mobile</titulo> 
+			<tiendas>
+				<tienda precio="0" moneda="0">
+					<html:a href="https://apps.apple.com/es/app/pubg-mobile-metro-royale/id1330123889" target="_blank">Apple Store</html:a>
+					<html:br/>
+					<html:a href="https://play.google.com/store/apps/details?id=com.tencent.ig" target="_blank">Play Store</html:a>
+				</tienda>
+			</tiendas>
+			<idiomas>
+				<idioma>Español</idioma>
+				<idioma>Inglés</idioma>
+				<idioma>Francés</idioma>
+				<idioma>Alemán</idioma>
+				<idioma>Italiano</idioma>
+				<idioma>Holandés</idioma>
+				<idioma>Chino</idioma>
+			</idiomas>
+			<dificultad>Dificil</dificultad>
+			<edad_recomendada pegi="12">PEGI</edad_recomendada>
+			<plataformas> <!--Que plataformas soporta-->
+				<plataforma mando="PantallaMovil">Movil</plataforma>
+			</plataformas>
+			<online>Si</online>
+			<anho_de_lanzamiento>2017</anho_de_lanzamiento>
+			<desarrolladores>
+				<desarrollador pais_de_origen="China">Tencent</desarrollador>
+			</desarrolladores>
+			<empresa>Tencent</empresa> <!--Empresa que vende el juego-->
+			<breve_descripcion>Copia del PUBG para pc en movil</breve_descripcion>
+			<resenhas>Si</resenhas>
+			<valoracion>4/5</valoracion>
+			<curiosidades>
+				<curiosidad>Hay muchos niños ratas</curiosidad>
+				<curiosidad>Tienes que echar a un amigo de tu equipo del LoL para jugar a esto</curiosidad>
+				<curiosidad>Hay gente de todos los niveles, y puede que un niño de 6 años te reveinte</curiosidad>
+			</curiosidades>
+		</videojuego>
+		
 		<videojuego>
 			<titulo imagen="Valorant" version_juego="v1.07" duracion="0">Valorant</titulo> 
 			<tiendas>
 				<tienda precio="0" moneda="0">
-					<!--En el window he agregado un elemento de html-->
-					<window xmlns:html="http://www.w3.org/1999/xhtml">
 						<html:a href="https://playvalorant.com/es-es/" target="_blank">
 						Riot Games
 						</html:a>
-					</window>
 				</tienda>
 			</tiendas>
 			<idiomas>
@@ -515,7 +551,53 @@
 				</curiosidad>
 			</curiosidades>
 		</videojuego>
+		
+		<videojuego>
+			<titulo imagen="MarioKart8" version_juego="v8.0.3.1.2345" duracion="0">Mario Kart 8 Deluxe</titulo>
+			<tiendas>
+				<tienda precio="59,99" moneda="euros">
+					<html:a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html" target="_blank">Nintendo</html:a>
+				</tienda>
+			</tiendas>
+			<idiomas>
+				<idioma>Español</idioma>
+				<idioma>Inglés</idioma>
+				<idioma>Francés</idioma>
+				<idioma>Alemán</idioma>
+				<idioma>Italiano</idioma>
+				<idioma>Japonés</idioma>
+				<idioma>Holandés</idioma>
+				<idioma>Polaco</idioma>
+				<idioma>Chino tradicional</idioma>
+				<idioma>Ruso</idioma>
+			</idiomas>
+			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
+			<edad_recomendada pegi="3">PEGI</edad_recomendada>
+			<plataformas>
+				<plataforma mando ="Mando Switch">Nintendo Switch</plataforma>
+			</plataformas>
+			<online>Sí</online>
+			<anho_de_lanzamiento>2010</anho_de_lanzamiento>
+			<desarrolladores>
+				<desarrollador pais_de_origen="Japon">Nintendo</desarrollador>
+				<desarrollador pais_de_origen="Japon">Capcom</desarrollador>
+			</desarrolladores>
+			<empresa>Nintendo</empresa>
+			<breve_descripcion>
+			Version actuallizada de Mari Kart 8 para Switch, mas divertido y mas caro
+			</breve_descripcion>
+			<resenhas>
+			Si
+			</resenhas>
+			<valoracion>5/5</valoracion>
+			<curiosidades>
+				<curiosidad>
+				Esta hecho para niños, pero juegan más personas mayores
+				</curiosidad>
+			</curiosidades>
+		</videojuego>
 	</GENERO>
+	
 	<GENERO genero="Musica">
 		<videojuego>
 			<titulo imagen="GuitarHero" version_juego="0" duracion="0">GuitarHero III: Legends of Rock</titulo> 
@@ -557,5 +639,47 @@
 				<curiosidad>Vendió tantas unidades que Activision tuvo problemas para abastecer la fuerte demanda.</curiosidad>
 			</curiosidades>
 		</videojuego>
+	</GENERO>
+	
+	<GENERO genero="MOBA">
+		<videojuego>
+			<titulo imagen="Arena of Valor" version_juego="v4.5.6" duracion="0">Arena of Valor</titulo> 
+			<tiendas>
+				<tienda precio="0" moneda="0">
+					<html:a href="https://apps.apple.com/es/app/arena-of-valor/id1150318642" target="_blank">Apple Store</html:a>
+					<html:br/>
+					<html:a href="https://play.google.com/store/apps/details?id=com.ngame.allstar.eu" target="_blank">Play Store</html:a>
+				</tienda>
+			</tiendas>
+			<idiomas>
+				<idioma>Español</idioma>
+				<idioma>Inglés</idioma>
+				<idioma>Francés</idioma>
+				<idioma>Alemán</idioma>
+				<idioma>Italiano</idioma>
+				<idioma>Holandés</idioma>
+				<idioma>China</idioma>
+			</idiomas>
+			<dificultad>Dificil</dificultad>
+			<edad_recomendada pegi="16">PEGI</edad_recomendada>
+			<plataformas> <!--Que plataformas soporta-->
+				<plataforma mando="MandoSwitch">Switch</plataforma>
+				<plataforma mando="PantallaMovil">Movil</plataforma>
+			</plataformas>
+			<online>Si</online>
+			<anho_de_lanzamiento>2018</anho_de_lanzamiento>
+			<desarrolladores>
+				<desarrollador pais_de_origen="China">Tencent</desarrollador>
+			</desarrolladores>
+			<empresa>Tencent</empresa> <!--Empresa que vende el juego-->
+			<breve_descripcion>Copia del Honor of Kings</breve_descripcion>
+			<resenhas>Si</resenhas>
+			<valoracion>4/5</valoracion>
+			<curiosidades>
+				<curiosidad>Va a morir cuando salga Wild Rift</curiosidad>
+				<curiosidad>Comunidad muy toxica</curiosidad>
+				<curiosidad>Casi tan tilteante como el LoL</curiosidad>
+			</curiosidades>
+		</videojuego>	
 	</GENERO>
 </VIDEOJUEGOS>
