@@ -54,6 +54,42 @@ titulo[imagen="GuitarHero"]:after{
 	border-color: #3a34a6;
 	float: right;
 }
+titulo[imagen="Arena of Valor"]:after{
+	background-image: url('https://elandroidelibre.elespanol.com/wp-content/uploads/2017/08/Arena-of-Valor-05.jpg');
+    background-position: right; 
+    background-size: 300px 300px;
+	display: block;
+    width: 300px; 
+    height: 300px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
+titulo[imagen="PUBG Mobile"]:after{
+	background-image: url('https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/11/11/936944-pubg-2.jpg');
+    background-position: right; 
+    background-size: 300px 300px;
+	display: block;
+    width: 300px; 
+    height: 300px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
+titulo[imagen="Mario Kart 8 Deluxe"]:after{
+	background-image: url('https://images-na.ssl-images-amazon.com/images/I/91KQmjDxj-L._SY679_.jpg');
+    background-position: right; 
+    background-size: 300px 300px;
+	display: block;
+    width: 300px; 
+    height: 300px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
 titulo[imagen="Valorant"]:after{
 	background-image: url('https://www.muycomputer.com/wp-content/uploads/2020/03/Valorant.jpg');
     background-position: right; 
