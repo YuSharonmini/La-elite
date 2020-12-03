@@ -8,13 +8,16 @@
 				<link href="estilos/prueba.css" rel="stylesheet"/>
 			</head>
 			<body>
+				<h1>XML original con CSS propia</h1>
+				<a href="videojuegos1.xml">Link al XML original</a>
+				<hr/>
 				<h1>Listado de videojuegos</h1>
 				<ol>
 					<xsl:for-each select="GENERO/videojuego">
 						<xsl:sort select="titulo"/>
 						<li>
 							<xsl:value-of select="titulo"/>
-							<a href="Videojuegos2.xml" target="_self"><input type="button" value="Ficha"/></a>
+							<a href="videojuegos2.xml" target="_self"><input type="button" value="Ficha"/></a>
 						</li>
 					</xsl:for-each>
 				</ol>
