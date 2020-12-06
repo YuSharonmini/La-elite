@@ -30,7 +30,8 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 		<!ATTLIST edad_recomendada pegi CDATA #REQUIRED>
 	<!ELEMENT plataformas (plataforma+)>
 		<!ELEMENT plataforma (#PCDATA)>
-			<!ATTLIST plataforma mando CDATA #REQUIRED>
+			<!ATTLIST plataforma mando CDATA #REQUIRED
+		volante CDATA #REQUIRED>
 	<!ELEMENT online (#PCDATA)>
 	<!ELEMENT anho_de_lanzamiento (#PCDATA)>
 	<!ELEMENT desarrolladores (desarrollador+)>
