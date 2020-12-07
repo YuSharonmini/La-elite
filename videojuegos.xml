@@ -170,16 +170,16 @@
 		<videojuego>
 			<titulo imagen="Overwatch" version_juego="Digital" duracion="0">Overwatch</titulo> 
 			<tiendas>
-				<tienda precio="19,99" moneda="E">
+				<tienda precio="19.99" moneda="E">
 					<html:a href="https://eu.shop.battle.net/es-es/product/overwatch" target="_blank">Tienda de Battle.Net</html:a>
 				</tienda><!--Link compra videojuego-->
-				<tienda precio="19,99" moneda="E">
+				<tienda precio="19.99" moneda="E">
 					<html:a href="https://www.microsoft.com/es-es/p/overwatch-legendary-edition/9p2q994zwb64" target="_blank">XBOX Store</html:a>
 				</tienda><!--Link compra videojuego-->
-				<tienda precio="19,99" moneda="E">
+				<tienda precio="19.99" moneda="E">
 					<html:a href="https://store.playstation.com/es-es/product/EP0002-CUSA03974_00-OWLEGENDARY00000" target="_blank">Playstation Store</html:a>
 				</tienda><!--Link compra videojuego-->
-				<tienda precio="19,99" moneda="E">
+				<tienda precio="19.99" moneda="E">
 					<html:a href="https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/Overwatch-Legendary-Edition-1633055.html" target="_blank">Nintendo eShop</html:a>
 				</tienda><!--Link compra videojuego-->
 			</tiendas>	
@@ -224,16 +224,16 @@
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
 			<tiendas>
-				<tienda precio="9,99" moneda="E">
+				<tienda precio="9.99" moneda="E">
 					<html:a href="https://www.origin.com/esp/es-es/store/fifa/fifa-20" target="_blank">Origin</html:a>
 				</tienda><!--Link compra videojuego-->
-				<tienda precio="9,99" moneda="E">
+				<tienda precio="9.99" moneda="E">
 					<html:a href="https://www.playstation.com/es-es/games/ea-sports-fifa-20/" target="_blank">Playstation Store</html:a>
 				</tienda><!--Link compra videojuego-->
-				<tienda precio="9,99" moneda="E">
+				<tienda precio="9.99" moneda="E">
 					<html:a href="https://www.xbox.com/es-ES/games/fifa-20#purchaseoptions" target="_blank">XBOX Store</html:a>
 				</tienda><!--Link compra videojuego-->
-				<tienda precio="9,99" moneda="E">
+				<tienda precio="9.99" moneda="E">
 					<html:a href="https://www.nintendo.es/Juegos/Nintendo-Switch/EA-SPORTS-FIFA-20-Legacy-Edition-para-Nintendo-Switch--1639619.html" target="_blank">Nintendo eShop</html:a>
 				</tienda><!--Link compra videojuego-->
 			</tiendas>
