@@ -1,51 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="videojuegos2.xsl"?>
-<!DOCTYPE VIDEOJUEGOS [<!ELEMENT VIDEOJUEGOS (html:br, GENERO)+>
-	<!ATTLIST VIDEOJUEGOS xmlns:html CDATA #FIXED "http://www.w3.org/1999/xhtml">
+<!DOCTYPE VIDEOJUEGOS [
+<!ELEMENT VIDEOJUEGOS (html:br , GENERO)+>
+<!ATTLIST VIDEOJUEGOS xmlns:html CDATA #FIXED "http://www.w3.org/1999/xhtml">
 <!ELEMENT GENERO (videojuego)+>
-	<!ATTLIST GENERO genero ID #REQUIRED>
+<!ATTLIST GENERO genero ID #REQUIRED>
 <!ELEMENT html:br EMPTY>
-	<!ATTLIST html:br id ID #REQUIRED>
-<!ELEMENT videojuego (titulo,tiendas,idiomas, dificultad, edad_recomendada, plataformas, 
-online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
-	<!ELEMENT titulo (#PCDATA)>
-		<!ATTLIST titulo 
-		imagen CDATA #IMPLIED
-		version_juego CDATA #REQUIRED
-		duracion CDATA #IMPLIED>
-	<!ELEMENT tiendas (tienda)+>
-		<!ELEMENT tienda (#PCDATA|html:embed|html:a)*>
-			<!ATTLIST tienda precio CDATA #REQUIRED 
-		moneda CDATA #REQUIRED>
-			<!ELEMENT html:a (#PCDATA)>
-				<!ATTLIST html:a href CDATA #REQUIRED 
-			target CDATA #REQUIRED>
-			<!ELEMENT html:embed (#PCDATA)>
-				<!ATTLIST html:embed src CDATA #REQUIRED 
-			frameborder CDATA #REQUIRED 
-			width CDATA #REQUIRED 
-			height CDATA #REQUIRED>
-	<!ELEMENT idiomas (idioma+)>
-		<!ELEMENT idioma EMPTY>
-	<!ELEMENT dificultad (#PCDATA)>
-	<!ELEMENT edad_recomendada (#PCDATA)>
-		<!ATTLIST edad_recomendada pegi CDATA #REQUIRED>
-	<!ELEMENT plataformas (plataforma+)>
-		<!ELEMENT plataforma (#PCDATA)>
-			<!ATTLIST plataforma mando CDATA #REQUIRED
-		volante CDATA #IMPLIED>
-	<!ELEMENT online (#PCDATA)>
-	<!ELEMENT anho_de_lanzamiento (#PCDATA)>
-	<!ELEMENT desarrolladores (desarrollador+)>
-		<!ELEMENT desarrollador (#PCDATA)>
-			<!ATTLIST desarrollador pais_de_origen CDATA #IMPLIED>
-	<!ELEMENT empresa (#PCDATA)>
-	<!ELEMENT breve_descripcion (#PCDATA)>
-	<!ELEMENT resenhas (#PCDATA)>
-	<!ELEMENT valoracion EMPTY>
-	<!ELEMENT curiosidades (curiosidad+)>
-		<!ELEMENT curiosidad (#PCDATA)>]>
-
+<!ATTLIST html:br id ID #REQUIRED>
+<!ELEMENT videojuego (titulo , tiendas , idiomas , dificultad , edad_recomendada , plataformas , online , anho_de_lanzamiento , desarrolladores* , empresa* , breve_descripcion , resenhas* , valoracion , curiosidades*)>
+<!ELEMENT titulo (#PCDATA)>
+<!ATTLIST titulo imagen CDATA #IMPLIED>
+<!ATTLIST titulo version_juego CDATA #REQUIRED>
+<!ATTLIST titulo duracion CDATA #IMPLIED>
+<!ELEMENT tiendas (tienda)+>
+<!ELEMENT tienda (#PCDATA | html:embed | html:a)*>
+<!ATTLIST tienda precio CDATA #REQUIRED>
+<!ATTLIST tienda moneda CDATA #REQUIRED>
+<!ELEMENT html:a (#PCDATA)>
+<!ATTLIST html:a href CDATA #REQUIRED>
+<!ATTLIST html:a target CDATA #REQUIRED>
+<!ELEMENT html:embed (#PCDATA)>
+<!ATTLIST html:embed src CDATA #REQUIRED>
+<!ATTLIST html:embed frameborder CDATA #REQUIRED>
+<!ATTLIST html:embed width CDATA #REQUIRED>
+<!ATTLIST html:embed height CDATA #REQUIRED>
+<!ELEMENT idiomas (idioma)+>
+<!ELEMENT idioma EMPTY>
+<!ATTLIST idioma pais_de_origen CDATA #REQUIRED>
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT edad_recomendada (#PCDATA)>
+<!ATTLIST edad_recomendada pegi CDATA #REQUIRED>
+<!ELEMENT plataformas (plataforma)+>
+<!ELEMENT plataforma (#PCDATA)>
+<!ATTLIST plataforma mando CDATA #REQUIRED>
+<!ATTLIST plataforma volante CDATA #IMPLIED>
+<!ELEMENT online (#PCDATA)>
+<!ELEMENT anho_de_lanzamiento (#PCDATA)>
+<!ELEMENT desarrolladores (desarrollador)+>
+<!ELEMENT desarrollador (#PCDATA)>
+<!ATTLIST desarrollador pais_de_origen CDATA #REQUIRED>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT breve_descripcion (#PCDATA)>
+<!ELEMENT resenhas (#PCDATA)>
+<!ELEMENT valoracion EMPTY>
+<!ATTLIST valoracion imagen CDATA #IMPLIED>
+<!ELEMENT curiosidades (curiosidad)+>
+<!ELEMENT curiosidad (#PCDATA)>
+]>
 <VIDEOJUEGOS xmlns:html="http://www.w3.org/1999/xhtml">
 	<html:br id="_FPS"/>
 	<GENERO genero="FPS">
@@ -276,7 +277,7 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 		</videojuego>
 
 		<videojuego>
-			<titulo imagen="NBA2K21" version_juego="v1" >NBA 2K21</titulo> 
+			<titulo imagen="NBA2K21" version_juego="v1">NBA 2K21</titulo> 
 			<tiendas>	
 				<tienda precio="59.95" moneda="E">
 					<html:embed src="https://store.steampowered.com/widget/1225330/424679/" frameborder="0" width="646" height="190">Link de compra de NBA 2K21</html:embed>
@@ -392,10 +393,10 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 		<dificultad>Difícil</dificultad>
 		<edad_recomendada pegi="3">PEGI</edad_recomendada>
 		<plataformas> 
-			<plataforma mando ="Mando XBOX">XBOX ONE</plataforma>
-			<plataforma mando ="Teclado y ratón">PC (Windows)</plataforma>
-			<plataforma mando ="DualShock4">PS4</plataforma>
-			<plataforma mando ="Mando Switch">Nintendo Switch</plataforma>
+			<plataforma mando="Mando XBOX">XBOX ONE</plataforma>
+			<plataforma mando="Teclado y ratón">PC (Windows)</plataforma>
+			<plataforma mando="DualShock4">PS4</plataforma>
+			<plataforma mando="Mando Switch">Nintendo Switch</plataforma>
 		</plataformas>
 		<online>Si</online>
 		<anho_de_lanzamiento>2015</anho_de_lanzamiento>
@@ -483,8 +484,8 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="Teclado y raton">PC</plataforma>
-				<plataforma mando ="DualShock">PS1 (Descatalogado)</plataforma>
+				<plataforma mando="Teclado y raton">PC</plataforma>
+				<plataforma mando="DualShock">PS1 (Descatalogado)</plataforma>
 			</plataformas>
 			<online>No</online>
 			<anho_de_lanzamiento>1997</anho_de_lanzamiento>
@@ -538,8 +539,8 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="12">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="Teclado y raton">PC</plataforma>
-				<plataforma mando ="DualShock4">PS4</plataforma>
+				<plataforma mando="Teclado y raton">PC</plataforma>
+				<plataforma mando="DualShock4">PS4</plataforma>
 			</plataformas>
 			<online>No</online>
 			<anho_de_lanzamiento>2015</anho_de_lanzamiento>
@@ -581,7 +582,7 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Fácil/Media</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="DS">Nintendo DS</plataforma>
+				<plataforma mando="DS">Nintendo DS</plataforma>
 			</plataformas>
 			<online>Sí</online>
 			<anho_de_lanzamiento>2008/2009</anho_de_lanzamiento>
@@ -618,8 +619,8 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="12">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="DualShock4">PS4</plataforma>
-				<plataforma mando ="Teclado y raton">PC</plataforma>
+				<plataforma mando="DualShock4">PS4</plataforma>
+				<plataforma mando="Teclado y raton">PC</plataforma>
 			</plataformas>
 			<online>Sí</online>
 			<anho_de_lanzamiento>2020</anho_de_lanzamiento>
@@ -671,8 +672,8 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="Mando XBOX" volante ="si">XBOX ONE</plataforma>
-				<plataforma mando ="Teclado y ratón" volante ="si">PC (Windows)</plataforma>
+				<plataforma mando="Mando XBOX" volante="si">XBOX ONE</plataforma>
+				<plataforma mando="Teclado y ratón" volante="si">PC (Windows)</plataforma>
 			</plataformas>
 			<online>Sí</online>
 			<anho_de_lanzamiento>2018</anho_de_lanzamiento>
@@ -738,10 +739,10 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="Mando XBOX" volante ="si">XBOX ONE</plataforma>
-				<plataforma mando ="Teclado y ratón" volante ="si">PC (Windows)</plataforma>
-				<plataforma mando ="DualShock4" volante ="si">PS4</plataforma>
-				<plataforma mando ="Mando Switch" volante ="no">Nintendo Switch</plataforma>
+				<plataforma mando="Mando XBOX" volante="si">XBOX ONE</plataforma>
+				<plataforma mando="Teclado y ratón" volante="si">PC (Windows)</plataforma>
+				<plataforma mando="DualShock4" volante="si">PS4</plataforma>
+				<plataforma mando="Mando Switch" volante="no">Nintendo Switch</plataforma>
 			</plataformas>
 			<online>Sí</online>
 			<anho_de_lanzamiento>2020</anho_de_lanzamiento>
@@ -796,9 +797,9 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="Mando XBOX" volante ="si">XBOX ONE</plataforma>
-				<plataforma mando ="Teclado y ratón" volante ="si">PC (Windows)</plataforma>
-				<plataforma mando ="DualShock4" volante ="si">PS4</plataforma>
+				<plataforma mando="Mando XBOX" volante="si">XBOX ONE</plataforma>
+				<plataforma mando="Teclado y ratón" volante="si">PC (Windows)</plataforma>
+				<plataforma mando="DualShock4" volante="si">PS4</plataforma>
 			</plataformas>
 			<online>Sí</online>
 			<anho_de_lanzamiento>2020</anho_de_lanzamiento>
@@ -846,7 +847,7 @@ online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, rese
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
 			<plataformas>
-				<plataforma mando ="Mando Switch" volante="no">Nintendo Switch</plataforma>
+				<plataforma mando="Mando Switch" volante="no">Nintendo Switch</plataforma>
 			</plataformas>
 			<online>Sí</online>
 			<anho_de_lanzamiento>2010</anho_de_lanzamiento>
