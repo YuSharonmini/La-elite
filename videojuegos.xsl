@@ -72,9 +72,9 @@
 					</div>
 				</div>
 				<div class="item5">
-				<h3 class="encabezados">Genero de deportes <a href="FichasIndependientes/Valorant.xml" target="blank"><input type="button" value="Ficha"/></a></h3>
+				<h3 class="encabezados">Genero de Deportes <a target="blank"><xsl:attribute name="href">videojuegos1.xml#_Deportes</xsl:attribute><input type="button" value="Ficha"/></a></h3>
 				<ol>
-					<xsl:for-each select="//GENERO[@genero='Deportes']/videojuego/titulo">
+					<xsl:for-each select="//GENERO[@id='Deportes']/videojuego/titulo">
 						<li>
 							<xsl:value-of select="."/>
 						</li>
@@ -82,9 +82,9 @@
 				</ol>
 				</div>
 				<div class="item9">
-				<h3 class="encabezados">Genero de Música <a href="FichasIndependientes/Valorant.xml" target="blank"><input type="button" value="Ficha"/></a></h3>
+				<h3 class="encabezados">Genero de Música <a target="blank"><xsl:attribute name="href">videojuegos1.xml#_Musica</xsl:attribute><input type="button" value="Ficha"/></a></h3>
 				<ol>
-					<xsl:for-each select="//GENERO[@genero='Musica']/videojuego/titulo">
+					<xsl:for-each select="//GENERO[@id='Musica']/videojuego/titulo">
 						<li>
 							<xsl:value-of select="."/>
 						</li>
@@ -92,9 +92,9 @@
 				</ol>
 				</div>
 				<div class="item6">
-				<h3 class="encabezados">Genero de Carreras <a href="FichasIndependientes/Valorant.xml" target="blank"><input type="button" value="Ficha"/></a></h3>
+				<h3 class="encabezados">Genero de Carreras <a target="blank"><xsl:attribute name="href">videojuegos1.xml#_Carreras</xsl:attribute><input type="button" value="Ficha"/></a></h3>
 				<ol>
-					<xsl:for-each select="//GENERO[@genero='Carreras']/videojuego/titulo">
+					<xsl:for-each select="//GENERO[@id='Carreras']/videojuego/titulo">
 						<li>
 							<xsl:value-of select="."/>
 						</li>
@@ -102,9 +102,9 @@
 				</ol>
 				</div>
 				<div class="item10">
-				<h3 class="encabezados">Genero de Plataformas <a href="FichasIndependientes/Valorant.xml" target="blank"><input type="button" value="Ficha"/></a></h3>
+				<h3 class="encabezados">Genero de Plataformas <a target="blank"><xsl:attribute name="href">videojuegos1.xml#_Plataformas</xsl:attribute><input type="button" value="Ficha"/></a></h3>
 				<ol>
-					<xsl:for-each select="//GENERO[@genero='Plataformas']/videojuego/titulo">
+					<xsl:for-each select="//GENERO[@id='Plataformas']/videojuego/titulo">
 						<li>
 							<xsl:value-of select="."/>
 						</li>
@@ -112,9 +112,9 @@
 				</ol>
 				</div>
 				<div class="item7">	
-				<h3 class="encabezados">Genero de RPG <a href="FichasIndependientes/Valorant.xml" target="blank"><input type="button" value="Ficha"/></a></h3>
+				<h3 class="encabezados">Genero de RPG <a target="blank"><xsl:attribute name="href">videojuegos1.xml#_RPG</xsl:attribute><input type="button" value="Ficha"/></a></h3>
 				<ol>
-					<xsl:for-each select="//GENERO[@genero='RPG']/videojuego/titulo">
+					<xsl:for-each select="//GENERO[@id='RPG']/videojuego/titulo">
 						<li>
 							<xsl:value-of select="."/>
 						</li>
@@ -122,9 +122,9 @@
 				</ol>
 				</div>
 				<div class="item11">
-				<h3 class="encabezados">Genero de MOBA <a href="FichasIndependientes/Valorant.xml" target="blank"><input type="button" value="Ficha"/></a></h3>
+				<h3 class="encabezados">Genero de MOBA <a target="blank"><xsl:attribute name="href">videojuegos1.xml#_MOBA</xsl:attribute><input type="button" value="Ficha"/></a></h3>
 				<ol>
-					<xsl:for-each select="//GENERO[@genero='MOBA']/videojuego/titulo">
+					<xsl:for-each select="//GENERO[@id='MOBA']/videojuego/titulo">
 						<li>
 							<xsl:value-of select="."/>
 						</li>
@@ -132,9 +132,9 @@
 				</ol>
 				</div>
 				<div class="item8">	
-				<h3 class="encabezados">Genero de FPS <a href="FichasIndependientes/Valorant.xml" target="blank"><input type="button" value="Ficha"/></a></h3>
+				<h3 class="encabezados">Genero de FPS <a target="blank"><xsl:attribute name="href">videojuegos1.xml#_FPS</xsl:attribute><input type="button" value="Ficha"/></a></h3>
 				<ol>
-					<xsl:for-each select="//GENERO[@genero='FPS']/videojuego/titulo">
+					<xsl:for-each select="//GENERO[@id='FPS']/videojuego/titulo">
 						<li>
 							<xsl:value-of select="."/>
 						</li>
@@ -142,6 +142,7 @@
 				</ol>
 				</div>
 				</div>
+				
 			</body>
 		</html>
 	</xsl:template>
