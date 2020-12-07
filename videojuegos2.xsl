@@ -5,13 +5,21 @@
 		<html>
 			<head>
 				<title>Videojuegos</title>
-				<link href="estilos/Videojuegos.css" rel="stylesheet"/>
+				<link href="prueba.css" rel="stylesheet"/>
 			</head>
 			<body>
-				<h1>Listado de videojuegos</h1>
 				<p>
-					<xsl:for-each select="GENERO/videojuego/titulo[@imagen='CSGO']">
-						<xsl:value-of select="../."/>
+					<xsl:for-each select="GENERO/videojuego/titulo[@imagen='Valorant']">
+						<span class="titulo"><xsl:value-of select="../titulo"/></span>
+						<span class="descripcion"><xsl:value-of select="../breve_descripcion"/></span>
+						<span class="clase1"><xsl:value-of select="../dificultad"/></span>
+						<span class="clase1"><xsl:value-of select="../edad_recomendada"/></span>
+						<span class="clase1"><xsl:value-of select="../plataformas/plataforma"/></span>
+						<span class="clase1"><xsl:value-of select="../online"/></span>
+						<span class="clase1"><xsl:value-of select="../anho_de_lanzamiento"/></span>
+						<span class="clase1"><xsl:value-of select="../empresa"/></span>	
+						<span class="clase1"><xsl:value-of select="../valoraciones"/></span>
+						<span class="clase1"><xsl:value-of select="../curiosidades/curiosidad[2]"/></span>	
 					</xsl:for-each>
 				</p>
 			</body>

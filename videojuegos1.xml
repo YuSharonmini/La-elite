@@ -559,6 +559,45 @@
 				</curiosidad>
 			</curiosidades>
 		</videojuego>
+			<videojuego>
+		<titulo imagen="Genshin Impact" version_juego="1.1" duracion="+40 horas">Genshin Impact</titulo>
+			<tiendas>
+				<tienda precio="0" moneda="0"><html:a href="https://genshin.mihoyo.com/en" target="_blank">Página oficial del Genshin Impact</html:a></tienda><!--Link compra videojuego-->
+			</tiendas>	
+			<idiomas>
+				<idioma>Japonés</idioma>
+			</idiomas>
+			<dificultad>Media</dificultad>
+			<edad_recomendada pegi="12">PEGI</edad_recomendada>
+			<plataformas>
+				<plataforma mando ="DualShock4">PS4</plataforma>
+				<plataforma mando ="Teclado y raton">PC</plataforma>
+			</plataformas>
+			<online>Sí</online>
+			<anho_de_lanzamiento>2020</anho_de_lanzamiento>
+			<desarrolladores>
+				<desarrollador pais_de_origen="Japón">miHoYo</desarrollador>
+			</desarrolladores>
+			<empresa>miHoYo</empresa>
+			<breve_descripcion>
+			los jugadores se embarcarán en varias aventuras como forasteros y viajarán con diferentes personajes
+			con habilidades únicas que van encontrando en el camino para explorar lo desconocido y descubrir los
+			secretos de Genshin en esta tierra. Los jugadores, al comienzo del juego, pueden elegir ser un hermano 
+			o una hermana que se adentra en la aventura en búsqueda de su familia.
+			</breve_descripcion>
+			<resenhas>
+			Genshin Impact demuestra que este potencial puede conseguir incluso equipos que hasta hace poco estaban
+			ocupados con proyectos para iOS y Android como miHoYo, fundado en 2012 y con títulos como Zombiegal Kawaii,
+			Guns GirlZ o Honkai Impact 3rd
+			</resenhas>
+			<valoracion>7/10</valoracion>
+			<curiosidades>
+				<curiosidad>
+				Genshin Impact entró en una gran polémica con su lanzamiento por su semejanza con el famoso Zelda Breath Of
+				The Wild, por utuilizar su modelo de mundo abierto en "free to play".
+				</curiosidad>
+			</curiosidades>
+		</videojuego>
 	</GENERO>	
 	
 	<GENERO genero="Carreras">
@@ -672,7 +711,7 @@
 		</videojuego>
 		
 		<videojuego>
-			<titulo imagen="assetto" version_juego="Digital" duracion="Ilimitado">Asseto Corsa Competizione</titulo>
+			<titulo imagen="assettocorsa" version_juego="Digital" duracion="Ilimitado">Asseto Corsa Competizione</titulo>
 			<tiendas>
 				<tienda precio="39.99" moneda="E">
 					<html:embed src="https://store.steampowered.com/widget/805550/" frameborder="0" width="646" height="190">Link de compra de Asseto Corsa Competizione</html:embed>
@@ -728,7 +767,7 @@
 		
 		
 		<videojuego>
-			<titulo imagen="MarioKart8" version_juego="v8.0.3.1.2345" duracion="0">Mario Kart 8 Deluxe</titulo>
+			<titulo imagen="Mario Kart 8 Deluxe" version_juego="v8.0.3.1.2345" duracion="0">Mario Kart 8 Deluxe</titulo>
 			<tiendas>
 				<tienda precio="59.99" moneda="E">
 					<html:a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html" target="_blank">Nintendo</html:a>

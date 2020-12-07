@@ -1,0 +1,141 @@
+body{
+	font-family: Verdana;
+	background-color: #e4f4fd;
+	color: #554488;
+	margin-right: 2%;
+	margin-left: 2%;
+	text-align: justify;
+}
+
+.listGenero{
+	display: inline-block;
+}
+
+hr {
+	background-color: #abdefa;
+	height: 5px;
+	border:none;
+}
+
+.encabezadoPrincipal{
+	font-weight: bolder;
+	color: #554488;
+	text-align: center;
+	/*background-image: url('https://static.wikia.nocookie.net/minecraftpe/images/6/64/Pico_de_hierro.png/revision/latest/scale-to-width-down/160?cb=20200503224519&path-prefix=es');
+	background-position: center;
+	background-size: 40px 40px;
+	padding: 3%;
+	border: solid #554488 4px;
+	background-repeat: repeat;*/
+	font-size: XXX-large;
+	border-radius: 8px;
+	background-color: #abdefa;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke: 1px #554488;
+}
+
+.negrita{
+	font-weight: bolder;
+	padding: 0.3%;
+}
+
+#genero{
+	text-align: center;
+}
+
+#block{
+	display: inline-block;
+}
+
+.grupo{
+	padding-bottom: 1%;
+}
+
+.lista{
+	margin-bottom: 1%;
+	margin-left: 1%;
+}
+
+.item1 { 
+	grid-area: header;
+  }
+.item2 { 
+	grid-area: main;
+}
+.item3 { 
+	grid-area: right; 
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'main right';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.item4 { 
+	grid-area: header; 
+}
+.item5 { 
+	grid-area: left; 
+}
+.item6 { 
+	grid-area: center; 
+}
+.item7 {
+	grid-area: right; 
+}
+.item8 {
+	grid-area: pito; 
+}
+.item9 {
+	grid-area: left2; 
+}
+.item10 {
+	grid-area: center2; 
+}
+.item11 {
+	grid-area: right2; 
+}
+.item12 {
+	grid-area: pito2; 
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'left center right pito'
+	'left2 center2 right2 pito2';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.encabezados{
+	/*border-top: 3px solid #3a34a6;*/
+	color: #554488;
+	/*border-bottom: 3px solid #56841b;*/
+	font-weight: bolder;
+	/*background:linear-gradient(#7f1496, #e92ba0);*/
+	/*text-shadow: -2px 2px 2px black;*/
+	background-color: #abdefa;
+	border-radius: 8px;
+	text-align: center;
+	padding: 4px;
+	
+}
+
+
+input {
+	font-family: Verdana;
+	font-weight: bolder;
+	color: #554488;
+	font-size: 14px;
+	background-color: #e4f4fd;
+	border-color: #554488;
+	border-radius: 8px;
+ }
+
+
