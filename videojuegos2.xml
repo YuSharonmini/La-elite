@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="videojuegos2.xsl"?>
-<!DOCTYPE VIDEOJUEGOS SYSTEM "videojuegos.dtd">
+<!DOCTYPE VIDEOJUEGOS [<!ELEMENT VIDEOJUEGOS (html:br, GENERO)+>
+	<!ATTLIST VIDEOJUEGOS xmlns:html CDATA #FIXED "http://www.w3.org/1999/xhtml">
+<!ELEMENT GENERO (videojuego)+>
+	<!ATTLIST GENERO genero ID #REQUIRED>
+<!ELEMENT html:br EMPTY>
+	<!ATTLIST html:br id ID #REQUIRED>
+<!ELEMENT videojuego (titulo,tiendas,idiomas, dificultad, edad_recomendada, plataformas, 
+online, anho_de_lanzamiento, desarrolladores*, empresa*, breve_descripcion, resenhas*, valoracion, curiosidades*)>
+	<!ELEMENT titulo (#PCDATA)>
+		<!ATTLIST titulo 
+		imagen CDATA #IMPLIED
+		version_juego CDATA #REQUIRED
+		duracion CDATA #IMPLIED>
+	<!ELEMENT tiendas (tienda)+>
+		<!ELEMENT tienda (#PCDATA|html:embed|html:a)*>
+			<!ATTLIST tienda precio CDATA #REQUIRED 
+		moneda CDATA #REQUIRED>
+			<!ELEMENT html:a (#PCDATA)>
+				<!ATTLIST html:a href CDATA #REQUIRED 
+			target CDATA #REQUIRED>
+			<!ELEMENT html:embed (#PCDATA)>
+				<!ATTLIST html:embed src CDATA #REQUIRED 
+			frameborder CDATA #REQUIRED 
+			width CDATA #REQUIRED 
+			height CDATA #REQUIRED>
+	<!ELEMENT idiomas (idioma+)>
+		<!ELEMENT idioma EMPTY>
+	<!ELEMENT dificultad (#PCDATA)>
+	<!ELEMENT edad_recomendada (#PCDATA)>
+		<!ATTLIST edad_recomendada pegi CDATA #REQUIRED>
+	<!ELEMENT plataformas (plataforma+)>
+		<!ELEMENT plataforma (#PCDATA)>
+			<!ATTLIST plataforma mando CDATA #REQUIRED
+		volante CDATA #IMPLIED>
+	<!ELEMENT online (#PCDATA)>
+	<!ELEMENT anho_de_lanzamiento (#PCDATA)>
+	<!ELEMENT desarrolladores (desarrollador+)>
+		<!ELEMENT desarrollador (#PCDATA)>
+			<!ATTLIST desarrollador pais_de_origen CDATA #IMPLIED>
+	<!ELEMENT empresa (#PCDATA)>
+	<!ELEMENT breve_descripcion (#PCDATA)>
+	<!ELEMENT resenhas (#PCDATA)>
+	<!ELEMENT valoracion EMPTY>
+	<!ELEMENT curiosidades (curiosidad+)>
+		<!ELEMENT curiosidad (#PCDATA)>]>
 
 <VIDEOJUEGOS xmlns:html="http://www.w3.org/1999/xhtml">
+	<html:br id="_FPS"/>
 	<GENERO genero="FPS">
 		<videojuego>
 			<titulo imagen="PUBG Mobile" version_juego="v19.2.31.2" duracion="0">PUBG Mobile</titulo> 
@@ -15,13 +60,13 @@
 				</tienda>
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Holandés</idioma>
-				<idioma>Chino</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="China"/>
 			</idiomas>
 			<dificultad>Dificil</dificultad>
 			<edad_recomendada pegi="12">PEGI</edad_recomendada>
@@ -36,7 +81,7 @@
 			<empresa>Tencent</empresa> <!--Empresa que vende el juego-->
 			<breve_descripcion>Copia del PUBG para pc en movil</breve_descripcion>
 			<resenhas>Si</resenhas>
-			<valoracion>4/5</valoracion>
+			<valoracion imagen="Estrella2"/>
 			<curiosidades>
 				<curiosidad>Hay muchos niños ratas</curiosidad>
 				<curiosidad>Tienes que echar a un amigo de tu equipo del LoL para jugar a esto</curiosidad>
@@ -50,14 +95,14 @@
 				<tienda precio="0" moneda="0"><html:a href="https://playvalorant.com/es-es/" target="_blank">Riot Games</html:a></tienda><!--Link compra videojuego-->
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Portugués</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Ruso</idioma>
-				<idioma>Polaco</idioma>
-				<idioma>Coreano</idioma>
-				<idioma>Chino</idioma>
-				<idioma>Japonés</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Portugal"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Rusia"/>
+				<idioma pais_de_origen="Polonia"/>
+				<idioma pais_de_origen="Corea"/>
+				<idioma pais_de_origen="China"/>
+				<idioma pais_de_origen="Japon"/>
 			</idiomas>
 			<dificultad>Dificil</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
@@ -74,7 +119,7 @@
 			<empresa>Riot Games</empresa> <!--Empresa que vende el juego-->
 			<breve_descripcion>Valorant es un videojuego de disparos en primera persona multijugador gratuito.</breve_descripcion>
 			<resenhas>Si</resenhas>
-			<valoracion>4.5/5</valoracion>
+			<valoracion imagen="Estrella45"/>
 			<curiosidades>
 				<curiosidad>Gran cantidad de jugadores profesionales de CS:GO migraron a este juego con el fin de aumentar su caché, puesto que muchos ya estaban perdiendo relevancia</curiosidad>
 				<curiosidad>Mixwell es el mejor jugador de España, y considerado por muchos, el mejor de Europa.</curiosidad>
@@ -88,16 +133,16 @@
 				<tienda precio="0" moneda="0"><html:embed src="https://store.steampowered.com/widget/730/" frameborder="0" width="646" height="190">Link de compra de CS:GO</html:embed></tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Portugués</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Coreano</idioma>
-				<idioma>Japonés</idioma>
-				<idioma>Ruso</idioma>
-				<idioma>Tailandés</idioma>
-				<idioma>Turco</idioma>
-				<idioma>Chino</idioma>
-				<idioma>Alemán</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Portugal"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Corea"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Rusia"/>
+				<idioma pais_de_origen="Tailandia"/>
+				<idioma pais_de_origen="Turquia"/>
+				<idioma pais_de_origen="China"/>
+				<idioma pais_de_origen="Alemania"/>
 			</idiomas>
 			<dificultad>Dificil</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
@@ -115,7 +160,7 @@
 			<empresa>Valve Corporation</empresa> <!--Empresa que vende el juego-->
 			<breve_descripcion>CS:GO es un videojuego de disparos en primera persona multijugador.</breve_descripcion>
 			<resenhas>Si</resenhas>
-			<valoracion>4/5</valoracion>
+			<valoracion imagen="Estrella4"/>
 			<curiosidades>
 				<curiosidad>Es el shooter competitivo más conocido en el mundo.</curiosidad>
 			</curiosidades>
@@ -138,16 +183,16 @@
 				</tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Portugués</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Coreano</idioma>
-				<idioma>Japonés</idioma>
-				<idioma>Ruso</idioma>
-				<idioma>Tailandés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Chino</idioma>
-				<idioma>Alemán</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Portugal"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Corea"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Rusia"/>
+				<idioma pais_de_origen="Tailandia"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="China"/>
+				<idioma pais_de_origen="Alemania"/>
 			</idiomas>
 			<dificultad>Dificil</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
@@ -166,13 +211,14 @@
 			<empresa>Blizzard</empresa> <!--Empresa que vende el juego-->
 			<breve_descripcion>Overwatch es un videojuego de disparos en primera persona multijugador.</breve_descripcion>
 			<resenhas>Si</resenhas>
-			<valoracion>3/5</valoracion>
+			<valoracion imagen="Estrella3"/>
 			<curiosidades>
 				<curiosidad>El videojuego de acción de Blizzard tiene la peculiaridad de ser el que ha contado con una beta abierta más grande hasta la fecha.</curiosidad>
 			</curiosidades>
 		</videojuego>
 	</GENERO>	
 	
+	<html:br id="_Deportes"/>
 	<GENERO genero="Deportes">
 		<videojuego>
 			<titulo imagen="FIFA20" version_juego="v1.9.2" duracion="">FIFA 20</titulo>
@@ -191,17 +237,17 @@
 				</tienda><!--Link compra videojuego-->
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Portugués</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Holandés</idioma>
-				<idioma>Brasileño</idioma>
-				<idioma>Árabe</idioma>
-				<idioma>Checo</idioma>
-				<idioma>Ruso</idioma>
-				<idioma>Polaco</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Portugal"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="Brasil"/>
+				<idioma pais_de_origen="Arabe"/>
+				<idioma pais_de_origen="Checo"/>
+				<idioma pais_de_origen="Rusia"/>
+				<idioma pais_de_origen="Polonia"/>
 			</idiomas>
 			<dificultad>6/10</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
@@ -221,7 +267,7 @@
 			<empresa>EA Sports</empresa> 
 			<breve_descripcion>FIFA 20, desarrollado por EA Sports y editado por Electronic Arts para PC, PlayStation 4, Xbox One y Switch, es una nueva entrega de la celebrada saga futbolística con las mejores ligas, clubes, jugadores y estadios junto a los ya clásicos modos historia y Ultimate Team.</breve_descripcion>
 			<resenhas>Sí</resenhas>
-			<valoracion>3.5/5</valoracion>
+			<valoracion imagen="Estrella35"/>
 			<curiosidades>
 				<curiosidad>El juego que más enfados produce</curiosidad>
 				<curiosidad>Incluye nuevo modo urbano llamado "VOLTA Football"</curiosidad>
@@ -249,14 +295,14 @@
 				</tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Japonés</idioma>
-				<idioma>Coreano</idioma>
-				<idioma>Chino</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Corea"/>
+				<idioma pais_de_origen="China"/>
 			</idiomas>
 			<dificultad>Fácil/Media</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
@@ -276,7 +322,7 @@
 			<empresa>Visual Concepts</empresa> 
 			<breve_descripcion>NBA 2K21 es un videojuego de simulación de baloncestodesarrollado por Visual Concepts y publicado por 2K Sports , basado en la Asociación Nacional de Baloncesto ( NBA ). Es la 22a entrega de lafranquicia NBA 2K y la sucesora de NBA 2K20.</breve_descripcion>
 			<resenhas>Sí</resenhas>
-			<valoracion>2/5</valoracion>
+			<valoracion imagen="Estrella2"/>
 			<curiosidades>
 				<curiosidad>Mala crítica entre los usuarios</curiosidad>
 				<curiosidad>Con posibilidad de compra de la Edición Mamba Forever, tributo al fallecido Kobe Bryant</curiosidad>
@@ -297,9 +343,9 @@
 				</tienda><!--Link compra videojuego-->
 		</tiendas>
 		<idiomas>
-			<idioma>Español</idioma>
-			<idioma>Inglés</idioma>
-			<idioma>Japones</idioma>
+			<idioma pais_de_origen="España"/>
+			<idioma pais_de_origen="Reino Unido"/>
+			<idioma pais_de_origen="Japon"/>
 		</idiomas>
 		<dificultad>Fácil</dificultad>
 		<edad_recomendada pegi="7">PEGI</edad_recomendada>
@@ -316,14 +362,14 @@
 		<empresa>Banda Namco Entertainment</empresa> 
 		<breve_descripcion>Videojuego dirigido a los fans del anime o el manga, ya que lo que busca no es ofrecer un buen título de fútbol arcade, sino una muy excelente recreación de los espectaculares partidos de la serie.</breve_descripcion>
 		<resenhas>Sí</resenhas>
-		<valoracion>3/5</valoracion>
+		<valoracion imagen="Estrella3"/>
 		<curiosidades>
 			<curiosidad>Muy buena animación con la posibilidad de jugar en versión original</curiosidad>
 			<curiosidad>Posibilidad de rememorar los momentos más icónicos de la serie</curiosidad>
 		</curiosidades>
 	</videojuego>
 	<videojuego>
-		<titulo imagen="rocketleague" version_juego="v1.85" duracion="">Rocket League</titulo> 
+		<titulo imagen="Rocketleague" version_juego="v1.85" duracion="">Rocket League</titulo> 
 		<tiendas>
 			<tienda precio="0" moneda="0">
 				<html:a href="https://www.epicgames.com/store/es-ES/product/rocket-league/home" target="_blank">Epic Games Store</html:a>
@@ -339,9 +385,9 @@
 			</tienda><!--Link compra videojuego-->
 		</tiendas>
 		<idiomas>
-			<idioma>Español</idioma>
-			<idioma>Inglés</idioma>
-			<idioma>Japones</idioma>
+			<idioma pais_de_origen="España"/>
+			<idioma pais_de_origen="Reino Unido"/>
+			<idioma pais_de_origen="Japon"/>
 		</idiomas>
 		<dificultad>Difícil</dificultad>
 		<edad_recomendada pegi="3">PEGI</edad_recomendada>
@@ -368,7 +414,7 @@
 		Por otra parte, los servidores fallan constantemente, dificultando muchas veces la experiencia de juego. Pero lo cierto es que, pese a su alta dificultad
 		para los jugadores principiantes, resulta muy entretenido para una partida entre amigos.
 		</resenhas>
-		<valoracion>8.2</valoracion>
+		<valoracion imagen="Estrella4"/>
 		<curiosidades>
 			<curiosidad>
 			Rocket League tuvo una precuela nacida en 2008, conocida popularmente como SARPBC, por su largo e impronunciable nombre: Supersonic Acrobatic
@@ -385,15 +431,16 @@
 	</videojuego>
 	</GENERO>
 
+	<html:br id="_Plataformas"/>
 	<GENERO genero="Plataformas">
 		<videojuego>
-			<titulo version_juego="v1.16.4" duracion="ilimitado">Minecraft</titulo>
+			<titulo imagen="Minecraft" version_juego="v1.16.4" duracion="ilimitado">Minecraft</titulo>
 			<tiendas>	
 				<tienda precio="14.99" moneda="E"><html:embed src="https://store.steampowered.com/widget/945360/" frameborder="0" width="646" height="190">Link de compra de Among Us</html:embed></tienda><!--Link compra videojuego-->
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
 			</idiomas>
 			<dificultad>10/10</dificultad>
 			<edad_recomendada pegi="18">PEGI</edad_recomendada>
@@ -410,7 +457,7 @@
 			<empresa>Majong</empresa> 
 			<breve_descripcion>Un juego de bloques pa niños</breve_descripcion>
 			<resenhas>Sí</resenhas>
-			<valoracion>4/5</valoracion>
+			<valoracion imagen="Estrella5"/>
 			<curiosidades>
 				<curiosidad>No hay cuadrados</curiosidad>
 				<curiosidad>Programado en Java</curiosidad>
@@ -418,6 +465,7 @@
 		</videojuego>
 	</GENERO>
 	
+	<html:br id="_RPG"/>
 	<GENERO genero="RPG">	
 		<videojuego>
 
@@ -426,11 +474,11 @@
 				<tienda precio="11.99" moneda="E"><html:embed src="https://store.steampowered.com/widget/39140/" frameborder="0" width="646" height="190">Link de compra de Final Fantasy VII</html:embed></tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Japonés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Francés</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Ingles"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Francia"/>
 			</idiomas>
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
@@ -441,7 +489,7 @@
 			<online>No</online>
 			<anho_de_lanzamiento>1997</anho_de_lanzamiento>
 			<desarrolladores>
-				<desarrollador pais_de_origen="Japón">Square Enix</desarrollador>
+				<desarrollador pais_de_origen="Japon">Square Enix</desarrollador>
 			</desarrolladores>
 			<empresa>Square Enix</empresa>
 			<breve_descripcion>
@@ -453,7 +501,7 @@
 			Estamos hablando de uno de los juegos más emblemáticos y queridos por la comunidad,
 			que marcó a toda una generación.Donde mucha gente descubrió el amplio mundo de los RPGS.
 			</resenhas>
-			<valoracion>9/10</valoracion>
+			<valoracion imagen="Estrella45"/>
 			<curiosidades>
 				<curiosidad>
 				Muchos fueron los rumores y especulaciones sobre el juego hasta la reciente salida del 
@@ -482,10 +530,10 @@
 				</tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Japonés</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Japon"/>
 			</idiomas>
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="12">PEGI</edad_recomendada>
@@ -496,7 +544,7 @@
 			<online>No</online>
 			<anho_de_lanzamiento>2015</anho_de_lanzamiento>
 			<desarrolladores>
-				<desarrollador pais_de_origen="EEUU">Toby Fox</desarrollador>
+				<desarrollador pais_de_origen="Estados Unidos">Toby Fox</desarrollador>
 			</desarrolladores>
 			<empresa>Toby Fox (Independiente)</empresa>
 			<breve_descripcion>
@@ -510,7 +558,7 @@
 			mágnifica ejecución y perfectos resultados, siendo en su época una gran revolución en la industria
 			de los videojuegos.
 			</resenhas>
-			<valoracion>9.5/10</valoracion>
+			<valoracion imagen="Estrella45"/>
 			<curiosidades>
 				<curiosidad>
 				Dentro del propio juego aparece un perro conocido como "Annoying Dog", el cual representa a
@@ -526,9 +574,9 @@
 				<tienda precio="29.95" moneda="E"><html:a href="https://www.nintendo.es/Juegos/Nintendo-DS/Pokemon-Edicion-Platino-272321.html" target="_blank">Nintendo eShop (Descatalogado)</html:a></tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Japonés</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Japon"/>
 			</idiomas>
 			<dificultad>Fácil/Media</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
@@ -538,7 +586,7 @@
 			<online>Sí</online>
 			<anho_de_lanzamiento>2008/2009</anho_de_lanzamiento>
 			<desarrolladores>
-				<desarrollador pais_de_origen="Japón">Game Freak</desarrollador>
+				<desarrollador pais_de_origen="Japon">Game Freak</desarrollador>
 			</desarrolladores>
 			<empresa>Nintendo</empresa>
 			<breve_descripcion>
@@ -550,7 +598,7 @@
 			En esta ampliación de Pokemon Diamante y Perla nos muestran el máximo potencial que estos mismos
 			podían alcanzar, creando un espléndido juego RPG de la famosa saga Pokemon.
 			</resenhas>
-			<valoracion>8/10</valoracion>
+			<valoracion imagen="Estrella4"/>
 			<curiosidades>
 				<curiosidad>
 				En la versión europea de Pokémon Platino no aparecían las típicas máquinas tragaperras que sí 
@@ -565,7 +613,7 @@
 				<tienda precio="0" moneda="0"><html:a href="https://genshin.mihoyo.com/en" target="_blank">Página oficial del Genshin Impact</html:a></tienda><!--Link compra videojuego-->
 			</tiendas>	
 			<idiomas>
-				<idioma>Japonés</idioma>
+				<idioma pais_de_origen="Japon"/>
 			</idiomas>
 			<dificultad>Media</dificultad>
 			<edad_recomendada pegi="12">PEGI</edad_recomendada>
@@ -576,7 +624,7 @@
 			<online>Sí</online>
 			<anho_de_lanzamiento>2020</anho_de_lanzamiento>
 			<desarrolladores>
-				<desarrollador pais_de_origen="Japón">miHoYo</desarrollador>
+				<desarrollador pais_de_origen="China">miHoYo</desarrollador>
 			</desarrolladores>
 			<empresa>miHoYo</empresa>
 			<breve_descripcion>
@@ -590,7 +638,7 @@
 			ocupados con proyectos para iOS y Android como miHoYo, fundado en 2012 y con títulos como Zombiegal Kawaii,
 			Guns GirlZ o Honkai Impact 3rd
 			</resenhas>
-			<valoracion>7/10</valoracion>
+			<valoracion imagen="Estrella35"/>
 			<curiosidades>
 				<curiosidad>
 				Genshin Impact entró en una gran polémica con su lanzamiento por su semejanza con el famoso Zelda Breath Of
@@ -600,6 +648,7 @@
 		</videojuego>
 	</GENERO>	
 	
+	<html:br id="_Carreras"/>
 	<GENERO genero="Carreras">
 
 		<videojuego>
@@ -608,7 +657,16 @@
 				<tienda precio="32.95" moneda="E"><html:a href="https://www.microsoft.com/es-es/p/forza-horizon-4/9pnqkhfld2wq" target="_blank">Microsoft Store</html:a></tienda>
 			</tiendas>
 			<idiomas>
-				<idioma>Idiomas aceptados por Microsoft</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="Polonia"/>
+				<idioma pais_de_origen="China"/>
+				<idioma pais_de_origen="Rusia"/>
 			</idiomas>
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
@@ -633,7 +691,7 @@
 			y permite al usuario disfrutar de una experiencia única, no solo a nivel de jugabilidad, sino también a nivel gráfico,
 			aspecto en el que esta saga aventaja a otras de su competencia.
 			</resenhas>
-			<valoracion>9/10</valoracion>
+			<valoracion imagen="Estrella45"/>
 			<curiosidades>
 				<curiosidad>
 				Debido a posibles fallos en los datos del juego, o a versiones desactualizadas de XBOX, algunos jugadores se han encontrado con un
@@ -666,16 +724,16 @@
 					</tienda>
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Japonés</idioma>
-				<idioma>Holandés</idioma>
-				<idioma>Polaco</idioma>
-				<idioma>Chino tradicional</idioma>
-				<idioma>Ruso</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="Polonia"/>
+				<idioma pais_de_origen="China"/>
+				<idioma pais_de_origen="Rusia"/>
 			</idiomas>
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
@@ -702,7 +760,7 @@
 			al igual que ocurre con la mayoría de remasterizaciones, muchos fans se quejan de la escasez de nuevos contenidos y algunos incluso del precio. Pero,
 			¿no es parecerse al juego original precisamente el objetivo que se persigue? Quizá podrían haberlo hecho mejor, pero sin duda, este NFS cumple con lo esperado.
 			</resenhas>
-			<valoracion>8/10</valoracion>
+			<valoracion imagen="Estrella4"/>
 			<curiosidades>
 				<curiosidad>
 				El juego ha sido lanzado a solo diez días de cumplirse el décimo aniversario del lanzamiento de la versión original. Una especie de homenaje por parte de los desarrolladores.
@@ -711,7 +769,7 @@
 		</videojuego>
 		
 		<videojuego>
-			<titulo imagen="assetto" version_juego="Digital" duracion="Ilimitado">Asseto Corsa Competizione</titulo>
+			<titulo imagen="assettocorsa" version_juego="Digital" duracion="Ilimitado">Asseto Corsa Competizione</titulo>
 			<tiendas>
 				<tienda precio="39.99" moneda="E">
 					<html:embed src="https://store.steampowered.com/widget/805550/" frameborder="0" width="646" height="190">Link de compra de Asseto Corsa Competizione</html:embed>
@@ -724,16 +782,16 @@
 				</tienda>
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Japonés</idioma>
-				<idioma>Holandés</idioma>
-				<idioma>Polaco</idioma>
-				<idioma>Chino</idioma>
-				<idioma>Ruso</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="Polonia"/>
+				<idioma pais_de_origen="China"/>
+				<idioma pais_de_origen="Rusia"/>
 			</idiomas>
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
@@ -757,7 +815,7 @@
 			A cambio el volumen de contenido se ve limitado por su propia definición, el número de circuitos sabrá a muy poco para el jugador acostumbrado a otros títulos –incluido el primer Assetto Corsa-, 
 			y en solitario queda escaso. Hasta aquí, las mismas virtudes y defectos que Competizione en PC, pero hay que sumar una adaptación un tanto decepcionante en el apartado gráfico.
 			</resenhas>
-			<valoracion>7/10</valoracion>
+			<valoracion imagen="Estrella3"/>
 			<curiosidades>
 				<curiosidad>
 				El juego está desarrollado bajo el motor Unreal Engine 4, creado por Epic Games, una de las empresas más en auge en el mundo de los videojuegos.
@@ -767,23 +825,23 @@
 		
 		
 		<videojuego>
-			<titulo imagen="MarioKart8" version_juego="v8.0.3.1.2345" duracion="0">Mario Kart 8 Deluxe</titulo>
+			<titulo imagen="Mario Kart 8 Deluxe" version_juego="v8.0.3.1.2345" duracion="0">Mario Kart 8 Deluxe</titulo>
 			<tiendas>
 				<tienda precio="59.99" moneda="E">
 					<html:a href="https://www.nintendo.es/Juegos/Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html" target="_blank">Nintendo</html:a>
 				</tienda>
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Japonés</idioma>
-				<idioma>Holandés</idioma>
-				<idioma>Polaco</idioma>
-				<idioma>Chino tradicional</idioma>
-				<idioma>Ruso</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Japon"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="Polonia"/>
+				<idioma pais_de_origen="China"/>
+				<idioma pais_de_origen="Rusia"/>
 			</idiomas>
 			<dificultad>Fácil/Media/Dificil (Ajustable)</dificultad>
 			<edad_recomendada pegi="3">PEGI</edad_recomendada>
@@ -803,7 +861,7 @@
 			<resenhas>
 			Si
 			</resenhas>
-			<valoracion>5/5</valoracion>
+			<valoracion imagen="Estrella5"/>
 			<curiosidades>
 				<curiosidad>
 				Esta hecho para niños, pero juegan más personas mayores
@@ -812,6 +870,7 @@
 		</videojuego>
 	</GENERO>
 	
+	<html:br id="_Musica"/>
 	<GENERO genero="Musica">
 		<videojuego>
 			<titulo imagen="GuitarHero" version_juego="0" duracion="0">GuitarHero III: Legends of Rock</titulo> 
@@ -819,13 +878,13 @@
 				<tienda precio="0" moneda="0">Descatalogado</tienda>
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Holandés</idioma>
-				<idioma>Polaco</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="Polonia"/>
 			</idiomas>
 			<dificultad>Dificil</dificultad>
 			<edad_recomendada pegi="12">PEGI</edad_recomendada>
@@ -846,7 +905,7 @@
 			<empresa>Activision</empresa> <!--Empresa que vende el juego-->
 			<breve_descripcion>Guitar Hero III es un videojuego de música en el que se utiliza un control en forma de guitarra para tocar diversas canciones</breve_descripcion>
 			<resenhas>Si</resenhas>
-			<valoracion>5/5</valoracion>
+			<valoracion imagen="Estrella5"/>
 			<curiosidades>
 				<curiosidad>Debido a que el guitarrista de Guns N' Roses Slash aparecía en el juego, el líder de la banda Axl Rose decidió demandar a Activision.</curiosidad>
 				<curiosidad>La capacidad de tocar la canción "Through the Fire and Flames" en modo difícil está al alcance de muy pocos.</curiosidad>
@@ -855,6 +914,7 @@
 		</videojuego>
 	</GENERO>
 	
+	<html:br id="_MOBA"/>
 	<GENERO genero="MOBA">
 		<videojuego>
 			<titulo imagen="Arena of Valor" version_juego="v4.5.6" duracion="0">Arena of Valor</titulo> 
@@ -862,18 +922,18 @@
 				<tienda precio="0" moneda="0">
 					<html:a href="https://apps.apple.com/es/app/arena-of-valor/id1150318642" target="_blank">Apple Store</html:a>
 				</tienda>
-				<tienda>
+				<tienda precio="0" moneda="0">
 					<html:a href="https://play.google.com/store/apps/details?id=com.ngame.allstar.eu" target="_blank">Play Store</html:a>
 				</tienda>
 			</tiendas>
 			<idiomas>
-				<idioma>Español</idioma>
-				<idioma>Inglés</idioma>
-				<idioma>Francés</idioma>
-				<idioma>Alemán</idioma>
-				<idioma>Italiano</idioma>
-				<idioma>Holandés</idioma>
-				<idioma>China</idioma>
+				<idioma pais_de_origen="España"/>
+				<idioma pais_de_origen="Reino Unido"/>
+				<idioma pais_de_origen="Francia"/>
+				<idioma pais_de_origen="Alemania"/>
+				<idioma pais_de_origen="Italia"/>
+				<idioma pais_de_origen="Holanda"/>
+				<idioma pais_de_origen="China"/>
 			</idiomas>
 			<dificultad>Dificil</dificultad>
 			<edad_recomendada pegi="16">PEGI</edad_recomendada>
@@ -889,7 +949,7 @@
 			<empresa>Tencent</empresa> <!--Empresa que vende el juego-->
 			<breve_descripcion>Copia del Honor of Kings</breve_descripcion>
 			<resenhas>Si</resenhas>
-			<valoracion>4/5</valoracion>
+			<valoracion imagen="Estrella1"/>
 			<curiosidades>
 				<curiosidad>Va a morir cuando salga Wild Rift</curiosidad>
 				<curiosidad>Comunidad muy toxica</curiosidad>

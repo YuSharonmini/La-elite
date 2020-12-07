@@ -5,23 +5,43 @@
 		<html>
 			<head>
 				<title>Videojuegos</title>
-				<link href="prueba.css" rel="stylesheet"/>
+				<link href="estilos/videojuegos2.css" rel="stylesheet"/>
 			</head>
 			<body>
-				<p>
+				<div class="ficha">
 					<xsl:for-each select="GENERO/videojuego/titulo[@imagen='Valorant']">
-						<span class="titulo"><xsl:value-of select="../titulo"/></span>
-						<span class="descripcion"><xsl:value-of select="../breve_descripcion"/></span>
-						<span class="clase1"><xsl:value-of select="../dificultad"/></span>
-						<span class="clase1"><xsl:value-of select="../edad_recomendada"/></span>
-						<span class="clase1"><xsl:value-of select="../plataformas/plataforma"/></span>
-						<span class="clase1"><xsl:value-of select="../online"/></span>
-						<span class="clase1"><xsl:value-of select="../anho_de_lanzamiento"/></span>
-						<span class="clase1"><xsl:value-of select="../empresa"/></span>	
-						<span class="clase1"><xsl:value-of select="../valoraciones"/></span>
-						<span class="clase1"><xsl:value-of select="../curiosidades/curiosidad[2]"/></span>	
-					</xsl:for-each>
-				</p>
+						<div class="titulo"><xsl:value-of select="../titulo"/></div>
+						<div class="descripcion"><xsl:value-of select="../breve_descripcion"/></div>
+						<div class="idioma">
+							<span class="españa"><xsl:value-of select="../idiomas/idioma[1]"/></span>
+							<span class="portugal"><xsl:value-of select="../idiomas/idioma[2]"/></span>
+							<span class="ingles"><xsl:value-of select="../idiomas/idioma[3]"/></span>
+						</div>
+						<div class="dificultad"><xsl:value-of select="../dificultad"/></div>
+						<div class="edad"><xsl:value-of select="../edad_recomendada"/></div>
+						<div class="plataforma">
+						<ul>
+							<li><xsl:value-of select="../plataformas"/></li>
+						</ul>
+						</div>
+						<div class="online"><xsl:value-of select="../online"/></div>
+						<div class="anho"><xsl:value-of select="../anho_de_lanzamiento"/></div>
+						<ul>
+							<li><xsl:value-of select="../desarrolladores/desarrollador[1]"/></li>
+							<li><xsl:value-of select="../desarrolladores/desarrollador[2]"/></li>
+							<li><xsl:value-of select="../desarrolladores/desarrollador[3]"/></li>
+						</ul>
+						<div class="empresa"><xsl:value-of select="../empresa"/></div>	
+						<div class="valoracion"><xsl:value-of select="../valoracion"/></div>	
+						<div class="desarrolladores">
+						<ul>
+							<li><xsl:value-of select="../curiosidades/curiosidad[1]"/></li>
+							<li><xsl:value-of select="../curiosidades/curiosidad[2]"/></li>
+							<li><xsl:value-of select="../curiosidades/curiosidad[3]"/></li>
+						</ul>
+						</div>
+					</xsl:for-each>	
+				</div>	
 			</body>
 		</html>
 	</xsl:template>

@@ -1,0 +1,172 @@
+body{
+	font-family: Verdana;
+	background-color: #e4f4fd;
+	color: #554488;
+	margin-right: 2%;
+	margin-left: 2%;
+	text-align: justify;
+}
+
+.ficha{
+	display:block;
+	padding: 10pt;
+	margin: 10pt;
+	background-color:#abdefa;
+	border-radius: 8px;
+}
+
+div{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.titulo:after{
+	background-image: url('https://www.muycomputer.com/wp-content/uploads/2020/03/Valorant.jpg');
+    background-position: right; 
+    background-size: 300px 200px;
+	display: block;
+    width: 300px; 
+    height: 200px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #554488;
+	float: right;
+}
+
+.descripcion:before{
+	content: "Breve descripción: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.dificultad:before{
+	content: "Dificultad: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.edad:after{
+	background-image: url('https://rating.pegi.info/assets/images/games/age_threshold_icons/16.png');
+	text-align:center;
+	background-position: right;
+    background-size: 35px 40px;
+	background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 40px;
+    content: "\0000a0";
+	padding-left: 1%;
+	padding-top: 10px;
+}
+
+.españa:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/203px-Flag_of_Spain.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+
+.ingles:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+
+.portugal:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}  
+
+.valoracion:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 88px;
+	padding-top: 1%;
+}
+
+.edad:before{
+	content: "Edad recomendada: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.plataforma:before{
+	content: "Plataformas soportadas: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.anho:before{
+	content: "Año de lanzamiento: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.online:before{
+	content: "Online: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.empresa:before{
+	content: "Empresa: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.desarrolladores:before{
+	content: "Desarrolladores:";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.valoracion:before{
+	content: "Valoraciones: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.idioma:before{
+	content: "Idioma: ";
+	color: #3a34a6;
+	font-weight: bold;
+}
+
+.titulo{
+	display: block;
+	font-size: 30pt;
+	text-align: left;
+	border-bottom: 3px solid #3a34a6;
+    color: #3a34a6;
+	font-weight:bold;
+}
+
+
+

@@ -1,9 +1,9 @@
 VIDEOJUEGOS {
-	font-family: "times new roman",serif;
-	font-size:16pt;
+	font-family: Verdana;
+	color: #554488;
 	text-align: left;
 	margin: 3%;
-	background-color: #A9BCF5;
+	background-color: #e4f4fd;
 	/*background-image: url('https://static.wikia.nocookie.net/minecraftpe/images/6/62/Diamante.png/revision/latest/scale-to-width-down/160?cb=20200929160201&path-prefix=es'); 
 	background-position: center;
 	background-repeat: repeat;
@@ -17,69 +17,98 @@ VIDEOJUEGOS:before {
 	text-align: center;
 	font-size: 48pt;
 	border-bottom: 3px solid #3a34a6;
-    background-color:#E6E6FA;
-    color: #3a34a6;
+    background-color: #abdefa;
+	border-radius: 8px;
 	font-weight:bold;
-	text-shadow: -5px 3px 5px black;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke: 1px #554488;
+	/*text-shadow: -5px 3px 5px black;*/
 }
+
 videojuego{
 	display:block;
 	padding: 10pt;
 	margin: 10pt;
-	background-color:#E6E6FA;
-	
+	background-color:#abdefa;
+	border-radius: 8px;
 }
 
 
 titulo{
 	display: block;
 	font-size: 30pt;
-	font-family: Haettenschweiler,serif;
 	text-align: left;
 	border-bottom: 3px solid #3a34a6;
-    background-color:#E6E6FA;
     color: #3a34a6;
 	font-weight:bold;
-	text-shadow: -4px 2px 4px grey;
 }
-titulo[imagen="GuitarHero"]:after{
-	background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Guitar-hero-iii-cover-image.jpg/220px-Guitar-hero-iii-cover-image.jpg');
-    background-position: right; 
+
+titulo[imagen="Genshin Impact"]:after{
+    background-image: url('https://as01.epimg.net/meristation/imagenes/2020/07/27/avances/1595847048_325105_1596873677_noticia_normal.jpg');
+    text-align:center;
+    background-position: top;
     background-size: 300px 300px;
-	display: block;
+    display: block;
     width: 300px; 
     height: 300px;
     content: "\0000a0";
-	border: solid;
-	border-color: #3a34a6;
-	float: right;
+    border: solid;
+    border-color: #3a34a6;
+    float: right;
 }
+
+titulo[imagen="assettocorsa"]:after{
+    background-image: url('https://505games.com/wp-content/uploads/AC_Steam_message_image_752x430.png');
+    background-position: right; 
+    background-size: 300px 300px;
+    display: block;
+    width: 300px; 
+    height: 300px;
+    content: "\0000a0";
+    border: solid;
+    border-color: #3a34a6;
+    float: right;
+}
+
 titulo[imagen="Arena of Valor"]:after{
-	background-image: url('https://elandroidelibre.elespanol.com/wp-content/uploads/2017/08/Arena-of-Valor-05.jpg');
+    background-image: url('https://elandroidelibre.elespanol.com/wp-content/uploads/2017/08/Arena-of-Valor-05.jpg');
     background-position: right; 
     background-size: 300px 300px;
-	display: block;
+    display: block;
     width: 300px; 
     height: 300px;
     content: "\0000a0";
-	border: solid;
-	border-color: #3a34a6;
-	float: right;
+    border: solid;
+    border-color: #3a34a6;
+    float: right;
 }
 titulo[imagen="PUBG Mobile"]:after{
-	background-image: url('https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/11/11/936944-pubg-2.jpg');
+    background-image: url('https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/11/11/936944-pubg-2.jpg');
     background-position: right; 
     background-size: 300px 300px;
-	display: block;
+    display: block;
     width: 300px; 
     height: 300px;
     content: "\0000a0";
-	border: solid;
-	border-color: #3a34a6;
-	float: right;
+    border: solid;
+    border-color: #3a34a6;
+    float: right;
 }
 titulo[imagen="Mario Kart 8 Deluxe"]:after{
-	background-image: url('https://images-na.ssl-images-amazon.com/images/I/91KQmjDxj-L._SY679_.jpg');
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/91KQmjDxj-L._SY679_.jpg');
+    background-position: right; 
+    background-size: 300px 300px;
+    display: block;
+    width: 300px; 
+    height: 300px;
+    content: "\0000a0";
+    border: solid;
+    border-color: #3a34a6;
+    float: right;
+}
+
+titulo[imagen="GuitarHero"]:after{
+	background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Guitar-hero-iii-cover-image.jpg/220px-Guitar-hero-iii-cover-image.jpg');
     background-position: right; 
     background-size: 300px 300px;
 	display: block;
@@ -167,6 +196,32 @@ titulo[imagen="CAPTAINTSUBASA"]:after{
 	border-color: #3a34a6;
 	float: right;
 }
+titulo[imagen="Rocketleague"]:after{
+	background-image: url('https://redgol.cl/__export/1600981985803/sites/redgol/img/2020/09/24/rocket-league-gratis_crop1600981237333.jpg');
+    text-align:center;
+    background-position: top;
+    background-size: 300px 400px;
+    display: block;
+    width: 300px; 
+    height: 400px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
+titulo[imagen="Minecraft"]:after{
+	background-image: url('https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F029%2F223%2Fcover2.jpg');
+    text-align:center;
+    background-position: top;
+    background-size: 300px 400px;
+    display: block;
+    width: 300px; 
+    height: 400px;
+    content: "\0000a0";
+	border: solid;
+	border-color: #3a34a6;
+	float: right;
+}
 titulo[imagen="Final Fantasy VII"]:after{
 	background-image: url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_FinalFantasyVII.jpg');
     text-align:center;
@@ -235,6 +290,7 @@ titulo[imagen="nfs"]:after{
 
 
 tiendas:before{
+	margin-top: 1px;
 	content: "Tiendas: ";
 	color: #3a34a6;
 	font-weight: bold;
@@ -244,11 +300,9 @@ tienda{
 	display:list-item;
 	list-style:circle;
 	margin-left:40pt;
-	margin-top:1%
+	margin-top:1%;
 }
-window{
-	display:block
-}
+
 idiomas:before{
 	content: "Idiomas: ";
 	color: #3a34a6;
@@ -257,13 +311,265 @@ idiomas:before{
 	display: block;
 }
 idioma{
-	display:list-item;
+	display:inline;
 	list-style:square;
 	margin-left: 20pt;
 	margin-top: 1%;
 }
 
-
+idioma[pais_de_origen="España"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/203px-Flag_of_Spain.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+idioma[pais_de_origen="Andorra"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/203px-Flag_of_Andorra.svg.png");
+    text-align:center;
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Reino Unido"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+idioma[pais_de_origen="Estados Unidos"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/203px-Flag_of_the_United_States.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+idioma[pais_de_origen="Japon"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/203px-Flag_of_Japan.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Canada"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/203px-Flag_of_Canada_%28Pantone%29.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+idioma[pais_de_origen="Rumania"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/203px-Flag_of_Romania.svg.png");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Francia"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}  
+idioma[pais_de_origen="Alemania"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Italia"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Holanda"]:after{
+    background-image: url("https://www.banderasdelmundo.net/wp-content/uploads/2019/08/bandera-paises-bajos.jpg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="China"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Rusia"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Portugal"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}  
+idioma[pais_de_origen="Polonia"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Corea"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Tailandia"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Turquia"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+idioma[pais_de_origen="Brasil"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+} 
+idioma[pais_de_origen="Arabe"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
+idioma[pais_de_origen="Checo"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}         
 genero:before{
 	content: "Género: ";
 	color: #3a34a6;
@@ -462,7 +768,7 @@ desarrollador[pais_de_origen="Estados Unidos"]:after{
 	padding-top: 2px
 } 
 desarrollador[pais_de_origen="Japon"]:after{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/203px-Flag_of_Japan.svg.png");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg");
     background-position: right;
     background-size: 35px 30px;
     background-repeat: no-repeat;
@@ -497,6 +803,18 @@ desarrollador[pais_de_origen="Rumania"]:after{
     padding-left: 1%;
 	padding-top: 2px
 } 
+desarrollador[pais_de_origen="China"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg");
+    background-position: right;
+    background-size: 35px 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 1%;
+	padding-top: 2px
+}
 
 empresa:before{
 	content: "Empresa desarrolladora: ";
@@ -540,7 +858,89 @@ valoracion{
 	display:block;
 	margin-top:1%;
 }
-
+valoracion[imagen="Estrella1"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+	padding-top: 1%;
+}
+valoracion[imagen="Estrella2"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 24px;
+	padding-top: 1%;
+}
+valoracion[imagen="Estrella3"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 50px;
+	padding-top: 1%;
+}
+valoracion[imagen="Estrella35"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 62px;
+	padding-top: 1%;
+}
+valoracion[imagen="Estrella4"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 75px;
+	padding-top: 1%;
+}
+valoracion[imagen="Estrella45"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 88px;
+	padding-top: 1%;
+}
+valoracion[imagen="Estrella5"]:after{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/512px-Star_icon_stylized.svg.png");
+    background-position: right;
+    background-size: 25px 20px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 25px; 
+    height: 30px;
+    content: "\0000a0";
+    padding-left: 100px;
+	padding-top: 1%;
+}
 
 curiosidades:before{
 	content: "Curiosidades: ";
